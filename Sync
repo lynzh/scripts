@@ -9,7 +9,7 @@ if [ $# -lt 1 ];
 	echo "\tUsage"
 	echo "$0 hostname"
 	exit 1
-elif [ $1 = "ccnp" ];
+elif [ $1 = "ccnp" ]; # check your .ssh/config and see what "Host {NAME}" says,
 	then
 	remote_host=ccnp
 elif [ $1 = "dm" ];
