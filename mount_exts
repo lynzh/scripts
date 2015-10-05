@@ -1,14 +1,24 @@
 #!/bin/bash
 # script to make sure external drives are mounted
 
-# make sure /mnt/ext1 is a directory, then mount disk to dir 
-[ -d /mnt/ext1 ] && mount /dev/sdc1 /mnt/ext1 || \
-[ ! -d /mnt/ext1 ] && mkdir /mnt/ext1 && mount /dev/sdc1 /mnt/ext1;
-# if its not directory, make a directory, then redo, then mount
+# Generic Hard disk variables
+disk1=/dev/sdc1
+disk2=/dev/sdd1
+disk3=/dev/sdf1
 
-# same process over here
-[ -d /mnt/ext2 ] && mount /dev/sdd1 /mnt/ext2 || \
-[ ! -d /mnt/ext2 ] && mkdir /mnt/ext2 && mount /dev/sdd1 /mnt/ext2;
+# Generic mount points in /mnt
+ext1=/mnt/ext1
+ext2=/mnt/ext2
+ext3=/mnt/ext3
+
+
+# First check if sd{c,d,e}1 is available for mounting
+[ -b ${disk1} ] && [ -d ${ext1} ] && mount ${disk1} ${ext1}
+[ -b ${disk2} ] && [ -d ${ext2} ] && mount ${disk2} ${ext2}
+[ -b ${disk3} ] && [ -d ${ext3} ] && mount ${disk3} ${ext3}
+
+
+
 
 # Add external disks to group storage, needs check if groups exist
 chgroup storage /mnt/ext1;
