@@ -2,38 +2,33 @@
 # script to make sure external drives are mounted
 
 # Generic Hard disk variables
-disk1=/dev/sdc1
-disk2=/dev/sdd1
-disk3=/dev/sdf1
+block1=/dev/sdc1
+block2=/dev/sdd1
+block3=/dev/sdf1
 
 # Generic mount points in /mnt
 ext1=/mnt/ext1
 ext2=/mnt/ext2
 ext3=/mnt/ext3
 
+# First check if sd{c,d,e}1 is available for mount, then mount it
+[ -b ${block1} ] && [ -d ${ext1} ] && mount ${block1} ${ext1}
+[ -b ${block2} ] && [ -d ${ext2} ] && mount ${block2} ${ext2}
+[ -b ${block3} ] && [ -d ${ext3} ] && mount ${block3} ${ext3}
 
-# First check if sd{c,d,e}1 is available for mounting
-[ -b ${disk1} ] && [ -d ${ext1} ] && mount ${disk1} ${ext1}
-[ -b ${disk2} ] && [ -d ${ext2} ] && mount ${disk2} ${ext2}
-[ -b ${disk3} ] && [ -d ${ext3} ] && mount ${disk3} ${ext3}
+# another round of tests, this time recursively mod owner's group  
+# will only chgrp if two previous tests return without fail
+[ -b ${block1} ] && [ -d ${ext1} ] && chgrp -R storage ${ext1}
+[ -b ${block2} ] && [ -d ${ext2} ] && chgrp -R storage ${ext2}
+[ -b ${block3} ] && [ -d ${ext3} ] && chgrp -R storage ${ext3}
 
 
+# Let user read from disks, this may fuckup ntfs disks or not
+[ -b ${block1} ] && [ -d ${ext1} ] && chmod -R 755 ${ext1}
+[ -b ${block2} ] && [ -d ${ext2} ] && chmod -R 755 ${ext2}
+[ -b ${block3} ] && [ -d ${ext3} ] && chmod -R 755 ${ext3}
 
+# last, add user to group \storage\
+gpasswd -a lynzh storage
 
-# Add external disks to group storage, needs check if groups exist
-chgroup storage /mnt/ext1;
-chgroup storage /mnt/ext2;
-
-# Let users read from external disks
-chmod 755 /mnt/ext1; 
-chmod 755 /mnt/ext2;
-
-# add user to group \storage\
-usermod -G storage lynzh
-
-[ -b /dev/sdc1 ] && [ -d /mnt/ext1 ] && \
-ln -s /mnt/ext1 $HOME/ext1;
-
-[ -b /dev/sdd1 ] && [ -d /mnt/ext2 ] && \
-ln -s /mnt/ext2 $HOME/ext2;
-
+# that last step needs a check
