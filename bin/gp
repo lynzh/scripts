@@ -1,0 +1,39 @@
+#!/bin/sh
+# Script to generate standard html tags and ready a file to write PHP in
+
+# I Want to generate basic html
+
+dump_data()
+{
+echo "<!DOCTYPE html>\n\
+<html>\n\
+<body>\n\t<?php\n\t\n\t?>\n\
+</body>\n\
+</html>" >> ${PHP_OUTPUT};
+}
+
+if [ $# = 0 ]; 
+then
+	echo "Error, exiting";
+	echo "Usage $0 {FILENAME.php}";
+	exit 1;
+elif [ $# = 1 ];
+then
+	PHP_OUTPUT=$1;	# We hook the variable number 1 to PHP_OUTPUT.
+	dump_data;
+	echo "File $PHP_OUTPUT ready for editing -- if you want vim to snap\
+ in, use\n\
+.$0 {filename.php} vim";
+	exit 0;
+elif [ $# = 2 ];
+then
+	PHP_OUTPUT=$1;	# We hook the variable number 1 to PHP_OUTPUT.
+	dump_data;
+	echo "Snapping to vim";
+	vim $(pwd)/$1
+	exit 0; 
+fi	
+# Script successfull, but we want input
+
+echo "\$# = $#"
+echo "\$1 = $1"
