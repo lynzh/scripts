@@ -1,0 +1,5 @@
+#!/bin/bash
+# Script to SCP mp3s to phone folder
+
+scp -P 2222 *mp3 root@192.168.20.6:/storage/emulated/0/Samsung/Music/
+

@@ -1,10 +1,13 @@
 #!/bin/bash
 # script to make sure external drives are mounted
 
+# whattodo command  /dev/disk CryptContainerVolumeGroup
+cryptsetup luksOpen /dev/sda5 TestVG
+
 # Generic Hard disk variables
 block1=/dev/sdc1
 block2=/dev/sdd1
-block3=/dev/sdf1
+block3=/dev/mapper/testvg-1TB
 
 # Generic mount points in /mnt
 ext1=/mnt/ext1
@@ -18,17 +21,12 @@ ext3=/mnt/ext3
 
 # another round of tests, this time recursively mod owner's group  
 # will only chgrp if two previous tests return without fail
-[ -b ${block1} ] && [ -d ${ext1} ] && chgrp -R storage ${ext1}
-[ -b ${block2} ] && [ -d ${ext2} ] && chgrp -R storage ${ext2}
-[ -b ${block3} ] && [ -d ${ext3} ] && chgrp -R storage ${ext3}
+#[ -b ${block1} ] && [ -d ${ext1} ] && chgrp -R storage ${ext1}
+#[ -b ${block2} ] && [ -d ${ext2} ] && chgrp -R storage ${ext2}
+#[ -b ${block3} ] && [ -d ${ext3} ] && chgrp -R storage ${ext3}
+
+# Check if lynzh is in group 'storage', else add him to that group
+CHECK_STORAGE() { groups lynzh 2>&1 | grep -o storage }
+[ -n CHECK_STORAGE ] && exit 0 || [ -z CHECK_STORAGE ] && gpasswd -a lynzh storage;
 
 
-# Let user read from disks, this may fuckup ntfs disks or not
-[ -b ${block1} ] && [ -d ${ext1} ] && chmod -R 755 ${ext1}
-[ -b ${block2} ] && [ -d ${ext2} ] && chmod -R 755 ${ext2}
-[ -b ${block3} ] && [ -d ${ext3} ] && chmod -R 755 ${ext3}
-
-# last, add user to group \storage\
-gpasswd -a lynzh storage
-
-# that last step needs a check

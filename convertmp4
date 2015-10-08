@@ -1,0 +1,24 @@
+#!/bin/sh
+# Script to convert mp4 to wav
+
+SCRIPT_STARTED=$(date +%s) # Seconds since 1970-01-01 00:00:00 UTC
+FILE=''
+
+for FILE in *
+do
+
+	mp4_rm_mp4=$(ls "${FILE}" | sed 's/\.mp4//g') # Renameing scheme mp4 -> wav
+	mp4_rm_space=$(echo "${mp4_rm_mp4}" | sed 's/\ /_/g') # replace space with _'s 
+
+	# this string converts mp4 files in current dir to wave
+	mplayer *mp4 -ao pcm:file="${mp4_rm_space}.wav" -novideo 	
+	
+	# this string convers raw wave output to lame mp3
+	ffmpeg -vn -i "${mp4_rm_space}.wav" "${mp4_rm_space}.mp3" 
+done
+
+SCRIPT_DONE=$(date +%s) # Seconds since beginning of time
+
+# Calculate runtime of script
+echo "converting was done in $(( $SCRIPT_DONE - $SCRIPT_STARTED ))"
+

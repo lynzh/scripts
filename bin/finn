@@ -1,0 +1,8 @@
+#!/bin/sh
+# Script to simplify the find function
+
+finn() {
+	find / -iname $@ 2>/dev/null
+}
+
+finn
