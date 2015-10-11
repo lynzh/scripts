@@ -1,5 +1,17 @@
-#!/bin/bash
+#!/bin/sh
 # Script to SCP mp3s to phone folder
+# DROID=''
+# Script takes DROID=1.2.3.4 xfer2phone /path/to/file.mp3{*m3p}
 
-scp -P 2222 *mp3 root@192.168.20.6:/storage/emulated/0/Samsung/Music/
+_usage() {
+  echo "Usage -- DROID=129.123.123.123 xfer2phone /path/to/mp3{*mp3s}";
+  echo "depencies; android phone with sshDroid, script puts files in";
+  echo "/storage/emulated/0/Samsung/Music";
+  exit 1;
+}
+
+# -z if DROID is zero, exits ||(OR) if $DROID is nonzero, continues
+[ -z $DROID ] && _usage || \
+[ -n $DROID ] && \
+scp -P 2222 "$@" root@${DROID}:/storage/emulated/0/Samsung/Music/;
 

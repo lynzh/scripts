@@ -26,7 +26,8 @@ ext3=/mnt/ext3
 #[ -b ${block3} ] && [ -d ${ext3} ] && chgrp -R storage ${ext3}
 
 # Check if lynzh is in group 'storage', else add him to that group
-CHECK_STORAGE() { groups lynzh 2>&1 | grep -o storage }
-[ -n CHECK_STORAGE ] && exit 0 || [ -z CHECK_STORAGE ] && gpasswd -a lynzh storage;
-
-
+CHECK_STORAGE() 
+{ 
+	groups lynzh 2>&1 | grep -o storage 
+}
+[ -n CHECK_STORAGE ] && exit 0 || [ -z CHECK_STORAGE ] && gpasswd -a lynzh storage && exit 0;
