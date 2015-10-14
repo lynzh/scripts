@@ -5,7 +5,7 @@
 
 _usage() {
   echo "Usage -- DROID=129.123.123.123 xfer2phone /path/to/mp3{*mp3s}";
-  echo "depencies; android phone with sshDroid, script puts files in";
+  echo "depencies; scp, android phone with sshDroid, script puts files in";
   echo "/storage/emulated/0/Samsung/Music";
   exit 1;
 }
