@@ -1,0 +1,10 @@
+#!/bin/bash
+
+
+c=1 
+while [ $c -le 66 ]
+do
+	echo "[ #\033[${c}m $c \033[0m ]\c "
+	c=$((c+1)) 
+done
+

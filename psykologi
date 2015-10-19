@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# Script to gimme information on psychology in norwegian
+
+
+echo "Pskologi"
+
+echo "Psykologer har en manual kallt DSM, (Diagnostic and Statistical manual of Mental Disorders)"
+echo "hvor de definerer hva som er en mental sykdom og hva som er ikke, psykologer stemmer"
+echo "på hvilke som skal beskrives i DSM manualen."
+
+echo "Når en medisin researcher identifiserer nye sykdommer, taes bilder av pathogenet,"
+echo "finner svake punkt i researchen og lager en treatment som sjekkes i kliniske trials,"
+echo "deretter legges oppdagelsen ut i en medisin journal"
+
+echo "Når en psykolog researcher en ny sykdom, går han sammen med andre psykologer og"
+echo "stemmer på det i hemmelighet."
+
+echo "Source - $HOME/Downloads/123160.pdf"

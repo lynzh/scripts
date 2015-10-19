@@ -1,0 +1,20 @@
+#!/bin/sh
+
+URL=http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.13.swf?uri=mgid:arc:video:thedailyshow.com:1d9240dc-1d47-4075-997d-5c5f81337c36
+
+type=network
+ref=thedailyshow.cc.com
+geo=NO
+group=entertainment
+network=None
+device=Other
+CONFIG_URL=http://media.mtvnservices.com/pmt/e1/players/mgid:arc:video:thedailyshow.com:/context7/config.xml?uri=mgid:arc:video:thedailyshow.com:1d9240dc-1d47-4075-997d-5c5f81337c36
+type=network
+ref=thedailyshow.cc.com
+geo=NO
+group=entertainment
+network=None
+device=Other#!flashvars#sid=Unknown_ComedyCentra​l&autoPlay=true&endCapAutoPlay=undefined&configParams=site%3Dthedailyshow.com&nid%3D82125&nextvideo=undefined&objectID=video_player(application/x-shockwave-flash <OBJECT> / http://media.mtvnservices.com)
+
+
+URL=http://media.mtvnservices.com/player/prime/mediaplayerprime.2.7.13.swf

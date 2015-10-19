@@ -1,0 +1,402 @@
+[   375.516] 
+X.Org X Server 1.15.0
+Release Date: 2013-12-27
+[   375.516] X Protocol Version 11, Revision 0
+[   375.516] Build Operating System: Linux 3.12-1-amd64 x86_64 Debian
+[   375.516] Current Operating System: Linux serenity 3.13-1-amd64 #1 SMP Debian 3.13.6-1 (2014-03-19) x86_64
+[   375.517] Kernel command line: BOOT_IMAGE=/vmlinuz-3.13-1-amd64 root=UUID=2a7968ed-98a6-4a8a-a406-295da19c8ac4 ro quiet
+[   375.517] Build Date: 06 February 2014  03:20:45PM
+[   375.517] xorg-server 2:1.15.0-2 (http://www.debian.org/support) 
+[   375.517] Current version of pixman: 0.32.4
+[   375.517] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[   375.517] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[   375.518] (==) Log file: "/var/log/Xorg.0.log", Time: Tue Mar 25 02:25:51 2014
+[   375.519] (==) Using config file: "/etc/X11/xorg.conf"
+[   375.519] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[   375.521] (==) ServerLayout "X.org Configured"
+[   375.521] (**) |-->Screen "Screen0" (0)
+[   375.521] (**) |   |-->Monitor "Monitor0"
+[   375.522] (**) |   |-->Device "Card0"
+[   375.522] (**) |-->Input Device "Mouse0"
+[   375.522] (**) |-->Input Device "Keyboard0"
+[   375.522] (==) Automatically adding devices
+[   375.522] (==) Automatically enabling devices
+[   375.522] (==) Automatically adding GPU devices
+[   375.526] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[   375.526] 	Entry deleted from font path.
+[   375.531] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[   375.531] 	Entry deleted from font path.
+[   375.531] (**) FontPath set to:
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins,
+	/usr/share/fonts/X11/misc,
+	/usr/share/fonts/X11/100dpi/:unscaled,
+	/usr/share/fonts/X11/75dpi/:unscaled,
+	/usr/share/fonts/X11/Type1,
+	/usr/share/fonts/X11/100dpi,
+	/usr/share/fonts/X11/75dpi,
+	built-ins
+[   375.531] (**) ModulePath set to "/usr/lib/xorg/modules"
+[   375.531] (WW) Hotplugging is on, devices using drivers 'kbd', 'mouse' or 'vmmouse' will be disabled.
+[   375.531] (WW) Disabling Mouse0
+[   375.531] (WW) Disabling Keyboard0
+[   375.531] (II) Loader magic: 0x7f9bb441dd40
+[   375.531] (II) Module ABI versions:
+[   375.531] 	X.Org ANSI C Emulation: 0.4
+[   375.531] 	X.Org Video Driver: 15.0
+[   375.531] 	X.Org XInput driver : 20.0
+[   375.531] 	X.Org Server Extension : 8.0
+[   375.533] (--) PCI:*(0:6:0:0) 10de:0e22:10b0:0801 rev 161, Mem @ 0xfc000000/33554432, 0xd8000000/134217728, 0xd4000000/67108864, I/O @ 0x0000ec00/128, BIOS @ 0x????????/524288
+[   375.533] Initializing built-in extension Generic Event Extension
+[   375.533] Initializing built-in extension SHAPE
+[   375.533] Initializing built-in extension MIT-SHM
+[   375.534] Initializing built-in extension XInputExtension
+[   375.534] Initializing built-in extension XTEST
+[   375.534] Initializing built-in extension BIG-REQUESTS
+[   375.534] Initializing built-in extension SYNC
+[   375.534] Initializing built-in extension XKEYBOARD
+[   375.534] Initializing built-in extension XC-MISC
+[   375.534] Initializing built-in extension SECURITY
+[   375.534] Initializing built-in extension XINERAMA
+[   375.535] Initializing built-in extension XFIXES
+[   375.535] Initializing built-in extension RENDER
+[   375.535] Initializing built-in extension RANDR
+[   375.535] Initializing built-in extension COMPOSITE
+[   375.535] Initializing built-in extension DAMAGE
+[   375.535] Initializing built-in extension MIT-SCREEN-SAVER
+[   375.535] Initializing built-in extension DOUBLE-BUFFER
+[   375.535] Initializing built-in extension RECORD
+[   375.536] Initializing built-in extension DPMS
+[   375.536] Initializing built-in extension Present
+[   375.536] Initializing built-in extension DRI3
+[   375.536] Initializing built-in extension X-Resource
+[   375.536] Initializing built-in extension XVideo
+[   375.536] Initializing built-in extension XVideo-MotionCompensation
+[   375.536] Initializing built-in extension SELinux
+[   375.536] Initializing built-in extension XFree86-VidModeExtension
+[   375.537] Initializing built-in extension XFree86-DGA
+[   375.537] Initializing built-in extension XFree86-DRI
+[   375.537] Initializing built-in extension DRI2
+[   375.537] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[   375.537] (II) LoadModule: "glx"
+[   375.538] (II) Loading /usr/lib/xorg/modules/linux/libglx.so
+[   375.616] (II) Module glx: vendor="NVIDIA Corporation"
+[   375.616] 	compiled for 4.0.2, module version = 1.0.0
+[   375.616] 	Module class: X.Org Server Extension
+[   375.616] (II) NVIDIA GLX Module  331.49  Wed Feb 12 20:17:10 PST 2014
+[   375.616] Loading extension GLX
+[   375.616] (II) LoadModule: "nvidia"
+[   375.616] (II) Loading /usr/lib/xorg/modules/drivers/nvidia_drv.so
+[   375.641] (II) Module nvidia: vendor="NVIDIA Corporation"
+[   375.641] 	compiled for 4.0.2, module version = 1.0.0
+[   375.641] 	Module class: X.Org Video Driver
+[   375.643] (II) NVIDIA dlloader X Driver  331.49  Wed Feb 12 19:57:36 PST 2014
+[   375.643] (II) NVIDIA Unified Driver for all Supported NVIDIA GPUs
+[   375.643] (--) using VT number 7
+
+[   375.649] (II) Loading sub module "fb"
+[   375.649] (II) LoadModule: "fb"
+[   375.650] (II) Loading /usr/lib/xorg/modules/libfb.so
+[   375.655] (II) Module fb: vendor="X.Org Foundation"
+[   375.655] 	compiled for 1.15.0, module version = 1.0.0
+[   375.655] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   375.656] (WW) Unresolved symbol: fbGetGCPrivateKey
+[   375.656] (II) Loading sub module "wfb"
+[   375.656] (II) LoadModule: "wfb"
+[   375.656] (II) Loading /usr/lib/xorg/modules/libwfb.so
+[   375.662] (II) Module wfb: vendor="X.Org Foundation"
+[   375.662] 	compiled for 1.15.0, module version = 1.0.0
+[   375.662] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[   375.662] (II) Loading sub module "ramdac"
+[   375.662] (II) LoadModule: "ramdac"
+[   375.662] (II) Module "ramdac" already built-in
+[   375.668] (==) NVIDIA(0): Depth 24, (==) framebuffer bpp 32
+[   375.668] (==) NVIDIA(0): RGB weight 888
+[   375.668] (==) NVIDIA(0): Default visual is TrueColor
+[   375.668] (==) NVIDIA(0): Using gamma correction (1.0, 1.0, 1.0)
+[   375.669] (**) NVIDIA(0): Enabling 2D acceleration
+[   376.480] (II) NVIDIA(0): Display (BenQ G2420HD (CRT-1)) does not support NVIDIA 3D
+[   376.480] (II) NVIDIA(0):     Vision stereo.
+[   376.510] (II) NVIDIA(0): Display (BenQ G2420HD (DFP-1)) does not support NVIDIA 3D
+[   376.510] (II) NVIDIA(0):     Vision stereo.
+[   376.574] (II) NVIDIA(0): NVIDIA GPU GeForce GTX 460 (GF104) at PCI:6:0:0 (GPU-0)
+[   376.574] (--) NVIDIA(0): Memory: 1048576 kBytes
+[   376.574] (--) NVIDIA(0): VideoBIOS: 70.04.1b.00.02
+[   376.574] (II) NVIDIA(0): Detected PCI Express Link width: 16X
+[   376.576] (--) NVIDIA(0): Valid display device(s) on GeForce GTX 460 at PCI:6:0:0
+[   376.576] (--) NVIDIA(0):     CRT-0
+[   376.576] (--) NVIDIA(0):     BenQ G2420HD (CRT-1) (boot, connected)
+[   376.576] (--) NVIDIA(0):     DFP-0
+[   376.576] (--) NVIDIA(0):     BenQ G2420HD (DFP-1) (connected)
+[   376.576] (--) NVIDIA(0):     DFP-2
+[   376.576] (--) NVIDIA(0): CRT-0: 480.0 MHz maximum pixel clock
+[   376.576] (--) NVIDIA(0): BenQ G2420HD (CRT-1): 400.0 MHz maximum pixel clock
+[   376.576] (--) NVIDIA(0): DFP-0: Internal Single Link TMDS
+[   376.576] (--) NVIDIA(0): DFP-0: 330.0 MHz maximum pixel clock
+[   376.576] (--) NVIDIA(0): BenQ G2420HD (DFP-1): Internal Single Link TMDS
+[   376.576] (--) NVIDIA(0): BenQ G2420HD (DFP-1): 165.0 MHz maximum pixel clock
+[   376.576] (--) NVIDIA(0): DFP-2: Internal Single Link TMDS
+[   376.576] (--) NVIDIA(0): DFP-2: 330.0 MHz maximum pixel clock
+[   376.576] (**) NVIDIA(0): Using HorizSync/VertRefresh ranges from the EDID for display
+[   376.576] (**) NVIDIA(0):     device BenQ G2420HD (CRT-1) (Using EDID frequencies has
+[   376.576] (**) NVIDIA(0):     been enabled on all display devices.)
+[   376.577] (**) NVIDIA(0): Using HorizSync/VertRefresh ranges from the EDID for display
+[   376.577] (**) NVIDIA(0):     device BenQ G2420HD (DFP-1) (Using EDID frequencies has
+[   376.577] (**) NVIDIA(0):     been enabled on all display devices.)
+[   376.579] (WW) NVIDIA(GPU-0): The EDID for BenQ G2420HD (DFP-1) contradicts itself: mode
+[   376.579] (WW) NVIDIA(GPU-0):     "720x480" is specified in the EDID; however, the EDID's
+[   376.579] (WW) NVIDIA(GPU-0):     valid HorizSync range (24.000-83.000 kHz) would exclude
+[   376.579] (WW) NVIDIA(GPU-0):     this mode's HorizSync (15.7 kHz); ignoring HorizSync check
+[   376.579] (WW) NVIDIA(GPU-0):     for mode "720x480".
+[   376.579] (WW) NVIDIA(GPU-0): The EDID for BenQ G2420HD (DFP-1) contradicts itself: mode
+[   376.579] (WW) NVIDIA(GPU-0):     "720x480" is specified in the EDID; however, the EDID's
+[   376.579] (WW) NVIDIA(GPU-0):     valid HorizSync range (24.000-83.000 kHz) would exclude
+[   376.579] (WW) NVIDIA(GPU-0):     this mode's HorizSync (15.7 kHz); ignoring HorizSync check
+[   376.579] (WW) NVIDIA(GPU-0):     for mode "720x480".
+[   376.579] (WW) NVIDIA(GPU-0): The EDID for BenQ G2420HD (DFP-1) contradicts itself: mode
+[   376.579] (WW) NVIDIA(GPU-0):     "720x576" is specified in the EDID; however, the EDID's
+[   376.579] (WW) NVIDIA(GPU-0):     valid HorizSync range (24.000-83.000 kHz) would exclude
+[   376.579] (WW) NVIDIA(GPU-0):     this mode's HorizSync (15.6 kHz); ignoring HorizSync check
+[   376.579] (WW) NVIDIA(GPU-0):     for mode "720x576".
+[   376.579] (WW) NVIDIA(GPU-0): The EDID for BenQ G2420HD (DFP-1) contradicts itself: mode
+[   376.579] (WW) NVIDIA(GPU-0):     "720x576" is specified in the EDID; however, the EDID's
+[   376.579] (WW) NVIDIA(GPU-0):     valid HorizSync range (24.000-83.000 kHz) would exclude
+[   376.579] (WW) NVIDIA(GPU-0):     this mode's HorizSync (15.6 kHz); ignoring HorizSync check
+[   376.579] (WW) NVIDIA(GPU-0):     for mode "720x576".
+[   376.581] (==) NVIDIA(0): 
+[   376.581] (==) NVIDIA(0): No modes were requested; the default mode "nvidia-auto-select"
+[   376.581] (==) NVIDIA(0):     will be used as the requested mode.
+[   376.581] (==) NVIDIA(0): 
+[   376.581] (II) NVIDIA(0): Validated MetaModes:
+[   376.581] (II) NVIDIA(0):     "CRT-1:nvidia-auto-select,DFP-1:nvidia-auto-select"
+[   376.581] (II) NVIDIA(0): Virtual screen size determined to be 3840 x 1080
+[   376.613] (--) NVIDIA(0): DPI set to (92, 91); computed from "UseEdidDpi" X config
+[   376.613] (--) NVIDIA(0):     option
+[   376.613] (--) Depth 24 pixmap format is 32 bpp
+[   376.613] (II) NVIDIA: Using 3072.00 MB of virtual memory for indirect memory
+[   376.613] (II) NVIDIA:     access.
+[   376.618] (II) NVIDIA(0): Setting mode "CRT-1:nvidia-auto-select,DFP-1:nvidia-auto-select"
+[   376.766] Loading extension NV-GLX
+[   376.866] (==) NVIDIA(0): Disabling shared memory pixmaps
+[   376.866] (==) NVIDIA(0): Backing store enabled
+[   376.866] (==) NVIDIA(0): Silken mouse enabled
+[   376.867] (==) NVIDIA(0): DPMS enabled
+[   376.867] Loading extension NV-CONTROL
+[   376.868] Loading extension XINERAMA
+[   376.868] (II) Loading sub module "dri2"
+[   376.868] (II) LoadModule: "dri2"
+[   376.868] (II) Module "dri2" already built-in
+[   376.868] (II) NVIDIA(0): [DRI2] Setup complete
+[   376.868] (II) NVIDIA(0): [DRI2]   VDPAU driver: nvidia
+[   376.868] (--) RandR disabled
+[   376.875] (II) SELinux: Disabled on system
+[   376.876] (II) Initializing extension GLX
+[   376.981] (II) config/udev: Adding input device Power Button (/dev/input/event5)
+[   376.981] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[   376.981] (II) LoadModule: "evdev"
+[   376.990] (II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
+[   376.997] (II) Module evdev: vendor="X.Org Foundation"
+[   376.997] 	compiled for 1.15.0, module version = 2.8.2
+[   376.997] 	Module class: X.Org XInput Driver
+[   376.997] 	ABI class: X.Org XInput driver, version 20.0
+[   376.997] (II) Using input driver 'evdev' for 'Power Button'
+[   376.997] (**) Power Button: always reports core events
+[   376.997] (**) evdev: Power Button: Device: "/dev/input/event5"
+[   376.997] (--) evdev: Power Button: Vendor 0 Product 0x1
+[   376.997] (--) evdev: Power Button: Found keys
+[   376.997] (II) evdev: Power Button: Configuring as keyboard
+[   376.997] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input7/event5"
+[   376.997] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[   376.997] (**) Option "xkb_rules" "evdev"
+[   376.997] (**) Option "xkb_model" "pc105"
+[   376.997] (**) Option "xkb_layout" "no"
+[   377.025] (II) config/udev: Adding input device Power Button (/dev/input/event4)
+[   377.026] (**) Power Button: Applying InputClass "evdev keyboard catchall"
+[   377.026] (II) Using input driver 'evdev' for 'Power Button'
+[   377.026] (**) Power Button: always reports core events
+[   377.026] (**) evdev: Power Button: Device: "/dev/input/event4"
+[   377.026] (--) evdev: Power Button: Vendor 0 Product 0x1
+[   377.026] (--) evdev: Power Button: Found keys
+[   377.026] (II) evdev: Power Button: Configuring as keyboard
+[   377.026] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/device:00/PNP0C0C:00/input/input6/event4"
+[   377.026] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 7)
+[   377.026] (**) Option "xkb_rules" "evdev"
+[   377.026] (**) Option "xkb_model" "pc105"
+[   377.026] (**) Option "xkb_layout" "no"
+[   377.026] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=3 (/dev/input/event18)
+[   377.026] (II) No input driver specified, ignoring this device.
+[   377.026] (II) This device may have been added with another device file.
+[   377.026] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=7 (/dev/input/event17)
+[   377.026] (II) No input driver specified, ignoring this device.
+[   377.026] (II) This device may have been added with another device file.
+[   377.027] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=8 (/dev/input/event16)
+[   377.027] (II) No input driver specified, ignoring this device.
+[   377.027] (II) This device may have been added with another device file.
+[   377.027] (II) config/udev: Adding input device HDA NVidia HDMI/DP,pcm=9 (/dev/input/event15)
+[   377.027] (II) No input driver specified, ignoring this device.
+[   377.027] (II) This device may have been added with another device file.
+[   377.027] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/event2)
+[   377.027] (**) A4TECH USB Device: Applying InputClass "evdev keyboard catchall"
+[   377.027] (II) Using input driver 'evdev' for 'A4TECH USB Device'
+[   377.027] (**) A4TECH USB Device: always reports core events
+[   377.027] (**) evdev: A4TECH USB Device: Device: "/dev/input/event2"
+[   377.027] (II) evdev: A4TECH USB Device: Using mtdev for this device
+[   377.027] (--) evdev: A4TECH USB Device: Vendor 0x9da Product 0x9090
+[   377.027] (--) evdev: A4TECH USB Device: Found 1 mouse buttons
+[   377.027] (--) evdev: A4TECH USB Device: Found scroll wheel(s)
+[   377.027] (--) evdev: A4TECH USB Device: Found relative axes
+[   377.027] (--) evdev: A4TECH USB Device: Found absolute axes
+[   377.027] (--) evdev: A4TECH USB Device: Found absolute multitouch axes
+[   377.027] (--) evdev: A4TECH USB Device: Found x and y absolute axes
+[   377.027] (--) evdev: A4TECH USB Device: Found keys
+[   377.027] (II) evdev: A4TECH USB Device: Forcing relative x/y axes to exist.
+[   377.027] (II) evdev: A4TECH USB Device: Configuring as mouse
+[   377.027] (II) evdev: A4TECH USB Device: Configuring as keyboard
+[   377.027] (II) evdev: A4TECH USB Device: Adding scrollwheel support
+[   377.027] (**) evdev: A4TECH USB Device: YAxisMapping: buttons 4 and 5
+[   377.027] (**) evdev: A4TECH USB Device: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[   377.027] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb6/6-1/6-1:1.0/input/input4/event2"
+[   377.027] (II) XINPUT: Adding extended input device "A4TECH USB Device" (type: KEYBOARD, id 8)
+[   377.027] (**) Option "xkb_rules" "evdev"
+[   377.027] (**) Option "xkb_model" "pc105"
+[   377.027] (**) Option "xkb_layout" "no"
+[   377.031] (II) evdev: A4TECH USB Device: initialized for relative axes.
+[   377.031] (WW) evdev: A4TECH USB Device: ignoring absolute axes.
+[   377.031] (**) A4TECH USB Device: (accel) keeping acceleration scheme 1
+[   377.031] (**) A4TECH USB Device: (accel) acceleration profile 0
+[   377.031] (**) A4TECH USB Device: (accel) acceleration factor: 2.000
+[   377.031] (**) A4TECH USB Device: (accel) acceleration threshold: 4
+[   377.032] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/js0)
+[   377.032] (II) No input driver specified, ignoring this device.
+[   377.032] (II) This device may have been added with another device file.
+[   377.032] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/event3)
+[   377.032] (**) A4TECH USB Device: Applying InputClass "evdev pointer catchall"
+[   377.032] (II) Using input driver 'evdev' for 'A4TECH USB Device'
+[   377.032] (**) A4TECH USB Device: always reports core events
+[   377.032] (**) evdev: A4TECH USB Device: Device: "/dev/input/event3"
+[   377.032] (--) evdev: A4TECH USB Device: Vendor 0x9da Product 0x9090
+[   377.032] (--) evdev: A4TECH USB Device: Found 20 mouse buttons
+[   377.032] (--) evdev: A4TECH USB Device: Found scroll wheel(s)
+[   377.032] (--) evdev: A4TECH USB Device: Found relative axes
+[   377.032] (--) evdev: A4TECH USB Device: Found x and y relative axes
+[   377.032] (II) evdev: A4TECH USB Device: Configuring as mouse
+[   377.032] (II) evdev: A4TECH USB Device: Adding scrollwheel support
+[   377.032] (**) evdev: A4TECH USB Device: YAxisMapping: buttons 4 and 5
+[   377.032] (**) evdev: A4TECH USB Device: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[   377.032] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:12.0/usb6/6-1/6-1:1.1/input/input5/event3"
+[   377.032] (II) XINPUT: Adding extended input device "A4TECH USB Device" (type: MOUSE, id 9)
+[   377.032] (II) evdev: A4TECH USB Device: initialized for relative axes.
+[   377.032] (**) A4TECH USB Device: (accel) keeping acceleration scheme 1
+[   377.032] (**) A4TECH USB Device: (accel) acceleration profile 0
+[   377.033] (**) A4TECH USB Device: (accel) acceleration factor: 2.000
+[   377.033] (**) A4TECH USB Device: (accel) acceleration threshold: 4
+[   377.033] (II) config/udev: Adding input device A4TECH USB Device (/dev/input/mouse1)
+[   377.033] (II) No input driver specified, ignoring this device.
+[   377.033] (II) This device may have been added with another device file.
+[   377.033] (II) config/udev: Adding input device Plus More Enterprise LTD. USB-compliant keyboard (/dev/input/event0)
+[   377.033] (**) Plus More Enterprise LTD. USB-compliant keyboard: Applying InputClass "evdev keyboard catchall"
+[   377.033] (II) Using input driver 'evdev' for 'Plus More Enterprise LTD. USB-compliant keyboard'
+[   377.033] (**) Plus More Enterprise LTD. USB-compliant keyboard: always reports core events
+[   377.033] (**) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Device: "/dev/input/event0"
+[   377.033] (--) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Vendor 0x518 Product 0x1
+[   377.033] (--) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Found keys
+[   377.033] (II) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Configuring as keyboard
+[   377.033] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:13.0/usb7/7-1/7-1:1.0/input/input2/event0"
+[   377.033] (II) XINPUT: Adding extended input device "Plus More Enterprise LTD. USB-compliant keyboard" (type: KEYBOARD, id 10)
+[   377.033] (**) Option "xkb_rules" "evdev"
+[   377.033] (**) Option "xkb_model" "pc105"
+[   377.033] (**) Option "xkb_layout" "no"
+[   377.034] (II) config/udev: Adding input device Plus More Enterprise LTD. USB-compliant keyboard (/dev/input/event1)
+[   377.034] (**) Plus More Enterprise LTD. USB-compliant keyboard: Applying InputClass "evdev keyboard catchall"
+[   377.034] (II) Using input driver 'evdev' for 'Plus More Enterprise LTD. USB-compliant keyboard'
+[   377.034] (**) Plus More Enterprise LTD. USB-compliant keyboard: always reports core events
+[   377.034] (**) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Device: "/dev/input/event1"
+[   377.034] (--) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Vendor 0x518 Product 0x1
+[   377.034] (--) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Found 1 mouse buttons
+[   377.034] (--) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Found scroll wheel(s)
+[   377.034] (--) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Found relative axes
+[   377.034] (--) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Found x and y relative axes
+[   377.034] (--) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Found absolute axes
+[   377.034] (II) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Forcing absolute x/y axes to exist.
+[   377.034] (--) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Found keys
+[   377.034] (II) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Configuring as mouse
+[   377.034] (II) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Configuring as keyboard
+[   377.034] (II) evdev: Plus More Enterprise LTD. USB-compliant keyboard: Adding scrollwheel support
+[   377.034] (**) evdev: Plus More Enterprise LTD. USB-compliant keyboard: YAxisMapping: buttons 4 and 5
+[   377.034] (**) evdev: Plus More Enterprise LTD. USB-compliant keyboard: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[   377.034] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:13.0/usb7/7-1/7-1:1.1/input/input3/event1"
+[   377.034] (II) XINPUT: Adding extended input device "Plus More Enterprise LTD. USB-compliant keyboard" (type: KEYBOARD, id 11)
+[   377.034] (**) Option "xkb_rules" "evdev"
+[   377.034] (**) Option "xkb_model" "pc105"
+[   377.034] (**) Option "xkb_layout" "no"
+[   377.034] (II) evdev: Plus More Enterprise LTD. USB-compliant keyboard: initialized for relative axes.
+[   377.034] (WW) evdev: Plus More Enterprise LTD. USB-compliant keyboard: ignoring absolute axes.
+[   377.034] (**) Plus More Enterprise LTD. USB-compliant keyboard: (accel) keeping acceleration scheme 1
+[   377.034] (**) Plus More Enterprise LTD. USB-compliant keyboard: (accel) acceleration profile 0
+[   377.034] (**) Plus More Enterprise LTD. USB-compliant keyboard: (accel) acceleration factor: 2.000
+[   377.034] (**) Plus More Enterprise LTD. USB-compliant keyboard: (accel) acceleration threshold: 4
+[   377.035] (II) config/udev: Adding input device Plus More Enterprise LTD. USB-compliant keyboard (/dev/input/mouse0)
+[   377.035] (II) No input driver specified, ignoring this device.
+[   377.035] (II) This device may have been added with another device file.
+[   377.035] (II) config/udev: Adding input device HDA ATI SB Front Mic (/dev/input/event14)
+[   377.035] (II) No input driver specified, ignoring this device.
+[   377.035] (II) This device may have been added with another device file.
+[   377.035] (II) config/udev: Adding input device HDA ATI SB Rear Mic (/dev/input/event13)
+[   377.035] (II) No input driver specified, ignoring this device.
+[   377.035] (II) This device may have been added with another device file.
+[   377.035] (II) config/udev: Adding input device HDA ATI SB Line (/dev/input/event12)
+[   377.035] (II) No input driver specified, ignoring this device.
+[   377.035] (II) This device may have been added with another device file.
+[   377.035] (II) config/udev: Adding input device HDA ATI SB Line Out Front (/dev/input/event11)
+[   377.035] (II) No input driver specified, ignoring this device.
+[   377.035] (II) This device may have been added with another device file.
+[   377.036] (II) config/udev: Adding input device HDA ATI SB Line Out Surround (/dev/input/event10)
+[   377.036] (II) No input driver specified, ignoring this device.
+[   377.036] (II) This device may have been added with another device file.
+[   377.036] (II) config/udev: Adding input device HDA ATI SB Line Out CLFE (/dev/input/event9)
+[   377.036] (II) No input driver specified, ignoring this device.
+[   377.036] (II) This device may have been added with another device file.
+[   377.036] (II) config/udev: Adding input device HDA ATI SB Line Out Side (/dev/input/event8)
+[   377.036] (II) No input driver specified, ignoring this device.
+[   377.036] (II) This device may have been added with another device file.
+[   377.036] (II) config/udev: Adding input device HDA ATI SB Front Headphone (/dev/input/event7)
+[   377.036] (II) No input driver specified, ignoring this device.
+[   377.036] (II) This device may have been added with another device file.
+[   377.037] (II) config/udev: Adding input device PC Speaker (/dev/input/event6)
+[   377.037] (II) No input driver specified, ignoring this device.
+[   377.037] (II) This device may have been added with another device file.
+[   377.087] (II) NVIDIA(GPU-0): Display (BenQ G2420HD (CRT-1)) does not support NVIDIA 3D
+[   377.087] (II) NVIDIA(GPU-0):     Vision stereo.
+[   377.117] (II) NVIDIA(GPU-0): Display (BenQ G2420HD (DFP-1)) does not support NVIDIA 3D
+[   377.117] (II) NVIDIA(GPU-0):     Vision stereo.
+[   377.120] (II) NVIDIA(0): Setting mode "VGA-0: nvidia-auto-select @1920x1080 +1920+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, HDMI-0: nvidia-auto-select @1920x1080 +1920+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}"
+[   377.156] (II) NVIDIA(0): Setting mode "VGA-0: nvidia-auto-select @1920x1080 +1920+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, HDMI-0: nvidia-auto-select @1920x1080 +0+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}"
+[  5351.153] (II) NVIDIA(GPU-0): Display (BenQ G2420HD (CRT-1)) does not support NVIDIA 3D
+[  5351.153] (II) NVIDIA(GPU-0):     Vision stereo.
+[  5351.183] (II) NVIDIA(GPU-0): Display (BenQ G2420HD (DFP-1)) does not support NVIDIA 3D
+[  5351.183] (II) NVIDIA(GPU-0):     Vision stereo.
+[  5351.507] (II) NVIDIA(0): Setting mode "HDMI-0: nvidia-auto-select @1920x1080 +0+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}"
+[  5540.201] (II) NVIDIA(GPU-0): Display (BenQ G2420HD (CRT-1)) does not support NVIDIA 3D
+[  5540.201] (II) NVIDIA(GPU-0):     Vision stereo.
+[  5540.230] (II) NVIDIA(GPU-0): Display (BenQ G2420HD (DFP-1)) does not support NVIDIA 3D
+[  5540.230] (II) NVIDIA(GPU-0):     Vision stereo.
+[  5540.248] (II) NVIDIA(0): Setting mode "NULL"
+[  5540.314] (II) NVIDIA(0): Setting mode "HDMI-0: 1280x1024 @1280x1024 +0+0 {ViewPortIn=1280x1024, ViewPortOut=1280x1024+0+0}"
+[  9705.177] (II) NVIDIA(GPU-0): Display (BenQ G2420HD (CRT-1)) does not support NVIDIA 3D
+[  9705.177] (II) NVIDIA(GPU-0):     Vision stereo.
+[  9705.206] (II) NVIDIA(GPU-0): Display (BenQ G2420HD (DFP-1)) does not support NVIDIA 3D
+[  9705.206] (II) NVIDIA(GPU-0):     Vision stereo.
+[  9705.255] (II) NVIDIA(0): Setting mode "HDMI-0: nvidia-auto-select @1920x1080 +0+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}"
+[ 19054.895] (II) NVIDIA(GPU-0): Display (BenQ G2420HD (CRT-1)) does not support NVIDIA 3D
+[ 19054.895] (II) NVIDIA(GPU-0):     Vision stereo.
+[ 19054.925] (II) NVIDIA(GPU-0): Display (BenQ G2420HD (DFP-1)) does not support NVIDIA 3D
+[ 19054.925] (II) NVIDIA(GPU-0):     Vision stereo.
+[ 19055.043] (II) NVIDIA(0): Setting mode "VGA-0: nvidia-auto-select @1920x1080 +1920+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}, HDMI-0: nvidia-auto-select @1920x1080 +0+0 {ViewPortIn=1920x1080, ViewPortOut=1920x1080+0+0}"

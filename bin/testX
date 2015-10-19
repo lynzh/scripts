@@ -1,0 +1,11 @@
+#!/bin/bash
+#
+# script to test the length of $HOME/.Xdefaults
+
+TARGET=$HOME/.Xdefaults
+COUNTLINES=$(cat $TARGET | wc -l)
+COUNTER=0
+
+if [[ $COUNTLINES -gt 11 ]] ; then
+		echo "system failure, .Xdefaults has overridden 11 lines"
+fi

@@ -1,0 +1,33 @@
+#!/bin/sh
+# script to generate ciscoconfigs for sorlanet
+
+# Static Variable
+FriendlyDoctorIP="109.163.48.4"
+StaticIPV6Adress="2a02:228:103:b102::1/64"
+AssumedStaticInformation="no-autoconfig\n\tipv6 nd managed-config-flag\n\tipv6 nd other-config\n\tipv6 dhcp relay destination"
+
+i=6
+a=1
+b=1
+c=1
+e=1
+
+while [ $e -lt 254 ] && while [ $b -lt 254 ] && while [ $c -lt 254 ] && while [ $a -lt 254 ] 
+do
+	echo "$a.$b.$c.$e"
+	e=$((e+33))
+	
+	if [ $e -gt 254 ]
+	then
+		e=1
+		c=$((c+10))
+	elif [ $c -gt 254 ]
+	then
+		b=$((b+1))
+		c=1
+	elif [ $b -gt 254 ]
+	then
+		a=$((a+1))
+		b=1
+	fi
+done; do true; exit 0; done; do true; exit 0; done; do true; exit 0; done

@@ -1,0 +1,9 @@
+#!/bin/zsh
+PROCESSES=$(ps Haux| wc -l)
+ps_axms=$(ps axms|wc -l)
+ps_axjf=$(ps axjf | wc -l)
+#ps_ely=$(ps ely|wc -l)
+ps_axZ=$(ps axZ|wc -l)
+echo $(( ($RANDOM)-$RANDOM)) "\t\t Fork bombs active: $ps_axms, $ps_axjf, $ps_axZ " 
+sleep 0.1
+. ~/scripts/bin/l2

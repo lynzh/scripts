@@ -1,0 +1,40 @@
+# .ssh/config
+
+Host "c"
+Hostname "84.202.95.107"
+Port "3406"
+User "lynzh"
+
+Host ccnp
+Hostname "shell.ccnp.no"
+Port "22"
+User "lynzh"
+
+Host "dm"
+Hostname "ssh.domeneshop.no"
+Port "22"
+User "lattis"
+
+Host CDO 
+Hostname "crawl.develz.org"
+Port "22"
+User crawl
+Identityfile "~/.ssh/crawl-cert.pub"
+
+
+Host ccnp
+	HostName shell.ccnp.no
+	User lynzh
+Host serenity
+	HostName 10.0.0.121
+	User lynzh
+ynzh
+
+Host localbug
+	HostName 10.0.0.121
+	User lynzh
+
+Host d420
+	Port 3406
+	HostName 192.168.0.198
+	User lynzh

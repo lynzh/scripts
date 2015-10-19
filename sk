@@ -1,0 +1,13 @@
+#!/bin/bash
+#
+vCode="5d83TVDQHZdH0TeUQlTuerP2oOZE0WwfIW9kS9El1knUK4UQc3xqr1ucxu2mZUL9"
+keyID="3107272"
+dueDate=$(curl -s -X GET "https://api.eveonline.com/char/SkillInTraining.xml.aspx?keyID=$keyID&vCode=$vCode" | grep trainingEndTime | perl -pe 's/\ \ \ \ <trainingEndTime>//g' | perl -pe 's/<\/trainingEndTime>//g'
+)
+curDate=$(date +"%Y-%m-%d %H:%m:%S")
+
+remainingMinutes=$(($dueDate-$curDate))
+echo "training is done in $remainingMinutes minutes"
+
+echo $curDate
+echo $dueDate

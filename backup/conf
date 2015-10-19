@@ -1,0 +1,92 @@
+# collection of aliases
+# prototype playground
+
+if test -d $HOME/scripts/bin; then
+	PATH=$PATH:$HOME/scripts/bin
+	export PATH
+fi
+
+hms=$(date '+%H:%M:%S')
+
+_rtorrent()
+{
+	if [ -d /home/backupwin/film ]
+	then
+	/usr/bin/rtorrent
+	fi
+}
+
+ardshop()
+{	
+	awk -f /home/lynzh/scripts/bill2 /home/lynzh/scripts/acdc_inven
+}
+
+rtest()
+{
+	if [ -d $HOME/iomega/downloads ]
+	then
+		/usr/bin/rtorrent
+	elif [ ! -d $HOME/iomega/downloads ]
+	then
+		sudo /home/lynzh/scripts/bin/diskmount
+		sleep 1
+		/usr/bin/rtorrent
+	fi
+}
+	
+alias dmount='sudo /home/lynzh/scripts/bin/diskmount'
+# initiate settings
+alias hasnet?='ping 195.159.0.100'
+
+alias csgfx='xrandr --output HDMI-0 --mode 1280x1024 --output VGA-0 --off'
+alias 2m='xrandr --output HDMI-0 --mode 1920x1080 --left-of VGA-0 --output VGA-0 --mode 1920x1080' 
+alias stm='wine .wine/drive_c/Program\ Files/Steam/Steam.exe -no-dwrite'
+alias wg='winecfg'
+alias eve2='WINEPREFIX=/home/lynzh/.eve2 wine .wine/drive_c/Program\ Files/CCP/EVE/bin/exefile.exe'
+alias evefix='wine .wine/drive_c/Program\ Files/CCP/EVE/repair.exe'
+alias mp='mplayer --novideo'
+alias am='alsamixer'
+alias mrg='xrdb -merge .Xresources'
+alias reboot='sudo reboot'
+alias right='xrandr --output HDMI-0 --off --output VGA-0 --mode 1920x1080'
+alias left='xrandr --output HDMI-0 --mode 1920x1080 --output VGA-0 --off'
+alias stopx='killall dwm'
+alias eve2='WINEPREFIX=/home/lynzh/.eve2/ wine .wine/drive_c/Program\ Files/CCP/EVE/bin/exefile.exe'
+alias eve='WINEPREFIX=/home/lynzh/.wine/ wine .wine/drive_c/Program\ Files/CCP/EVE/bin/exefile.exe'
+alias ta='tmux attach'
+
+alias cs='csgfx; sleep 1; stm'
+
+alias down='sudo shutdown -a -h -time "now"'
+alias down='sudo shutdown -a -h -time "now"'
+alias cfg='cd;cd .wine/drive_c/Program\ Files/Steam/SteamApps/common/Counter-Strike\ Global\ Offensive/csgo/cfg'
+alias cs720='xrandr --output HDMI-0 --mode 1280x720 --output VGA-0 --off'
+#sudo mount /dev/sde1 /mnt/usb0
+#alias mountwin='sudo mount rtorrent/Downloads/Windows\ 7\ SP.1\ \[X64\ Bit\]\ Pre-Activated\ March\ 2014\ English/WIN7.SP1.EN©☆@.iso /mnt/win'
+alias makebackupcfgroot='sudo cp .zshrc /root.zshrc; sudo cp .conf /root/.conf'
+ardwr() {
+awk -f /home/lynzh/scripts/bill2 /home/lynzh/scripts/acdc_inven
+}
+alias 1m='xrandr --output HDMI-0 --mode 1920x1080'
+alias lap1m='xrandr --output LVDS1 --mode 1280x800 --output VGA1 --off'
+alias vimconf='vim /home/lynzh/.vimrc'
+
+# Provisory functions
+gobig() 
+{ 
+		cat $HOME/.Xdefaults| sed 's/size=18/size=24/g' > $HOME/.Xtest; 
+}
+
+goread() 
+{ 
+		cat $HOME/.Xdefaults| sed 's/size=24/size=18/g' > $HOME/.Xtest; 
+}
+
+l2d() { links2 duckduckgo.com }
+
+torrentmove() { mv $HOME/Downloads/*torrent $HOME/rtorrent/watch_torrent }
+
+dateform() { echo "day $(date +%d) month $(date +%m) year $(date +%y)
+ OR $(date +%d/%m/%y)" }
+_apt() { alias agi ati au ag adg acsh acs acp }
+novel() { vim -u .novelrc  }

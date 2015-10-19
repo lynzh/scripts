@@ -1,0 +1,6 @@
+#!/bin/zsh
+{
+        n=$(echo $a | sed 's/\ /_/g' | sed 's/-_YouTube_//g' | sed 's/\&amp;_//g' | sed 's/\.mp4//g')
+        msg="Converting $a to\n\t   $n"
+        for a in ~/mp3/????_??/*.mp4; do mplayer --novideo $a --ao=pcm:file="$n".wav && echo $msg; done
+}

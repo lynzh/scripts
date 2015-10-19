@@ -16,7 +16,7 @@ ext3=/mnt/ext3
 
 # First check if sd{c,d,e}1 is available for mount, then mount it
 [ -b ${block1} ] && [ -d ${ext1} ] && mount -t ntfs-3g ${block1} ${ext1}
-[ -b ${block2} ] && [ -d ${ext2} ] && mount -t ntfs-3g ${block2} ${ext2}
+[ -b ${block2} ] && [ -d ${ext2} ] && mount ${block2} ${ext2}
 [ -b ${block3} ] && [ -d ${ext3} ] && mount ${block3} ${ext3}
 
 # another round of tests, this time recursively mod owner's group  
@@ -30,4 +30,4 @@ CHECK_STORAGE()
 { 
 	groups lynzh 2>&1 | grep -o storage 
 }
-[ -n CHECK_STORAGE ] && exit 0 || [ -z CHECK_STORAGE ] && gpasswd -a lynzh storage && exit 0;
+# [ -n CHECK_STORAGE ] && exit 0 || [ -z CHECK_STORAGE ] && gpasswd -a lynzh storage && exit 0;

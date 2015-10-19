@@ -1,0 +1,6 @@
+{
+na = $1
+printf "|%s|", na
+printf "|$10s|", na
+printf "|$-10s|", na
+}

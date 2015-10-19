@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+# test at getopts
+
+TMP='a:f:g'
+derp.`

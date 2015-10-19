@@ -1,0 +1,72 @@
+#!/bin/bash
+# Script to create simple menus and take action according to that selected
+# menu item
+
+first=109; second=163; third=50; fourth=1
+A="1"; B="a"; C="6"; D="0"; E="3"; F="0"; G="1"; H="0"; I="8"; J="2"; K="2"; L="0"; M="2"; N="0"; O="a"; P="2"
+
+
+while :
+ do
+    clear
+    echo -e "-------------------------------------"
+    echo -e " Main Menu "
+    echo -e "-------------------------------------"
+    echo -e "[1] Configure IPv4"
+    echo -e "[2] Configure IPv6"
+    echo -e "[3] set NameServer"
+    echo -e "[4] Do nothing"
+    echo -e "======================="
+    echo -e -n "Enter your menu choice [1-5]: "
+    read menuchoice
+    case $menuchoice in
+      1) 
+		clear
+	    echo -e "-------------------------------------"
+	    echo -e " IPv4 conf, current addr is $first.$second.$third.$fourth"
+    	echo -e "-------------------------------------"
+	    echo -e "[1] Use current"
+	    echo -e "[2] Configure a new"
+    	echo -e "[5] Exit/Stop"
+	    echo -e "======================="
+    	echo -e -n "Enter your menu choice [1-5]: "
+		read ipv4
+			case $ipv4 in
+				1) echo -e "using $first.$second.$third"
+				;;
+				2|two) echo -e "Config happens in four stages, in the first stage type eg.\n{192}[ENTER], this logs the first bit of the adress\nContinue four times"
+					read first && echo -e "\c"; read second ; read third ; read fourth;
+				echo -e "you input $first.$second.$third.$fourth"
+			;;
+			5) exit 0;;
+		esac
+		;;
+      2)
+		clear
+	    echo -e "-------------------------------------"
+	    echo -e " IPv6 conf, current addr is ${P}${O}${N}${M}:${L}${K}${J}${I}:${H}${G}${F}${E}:${D}${C}${B}${A}"
+    	echo -e "-------------------------------------"
+	    echo -e "[1] Use current"
+	    echo -e "[2] Configure a new"
+    	echo -e "[5] Exit/Stop"
+	    echo -e "======================="
+    	echo -e -n "Enter your menu choice [1-5]: "
+		read ipv6
+			case $ipv6 in
+				1) echo -e "using ${P}${O}${N}${M}:${L}${K}${J}${I}:${H}${G}${F}${E}:${D}${C}${B}${A}"
+				;;
+				2|two) echo -e "Config happens in 16 stages, in the first stage type eg.\n{2}[ENTER], this logs the first bit of the adress\nContinue 16 times"
+					read P; read O; read N; read M; read L; read K; read J; read I; read H; read G; read F; read E; read D; read C; read B; read A;
+				echo -e "you input ${P}${O}${N}${M}:${L}${K}${J}${I}:${H}${G}${F}${E}:${D}${C}${B}${A}"
+			;;
+			5) exit 0;;
+		esac
+		;;
+	  3)
+		echo -e "magic injected"
+		;;
+	  4)
+		echo -e "Nothing done"
+		;; 
+ esac
+done

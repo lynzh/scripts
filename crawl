@@ -1,0 +1,60 @@
+#!/bin/zsh
+# Script to print a table of weapon dps for inventory in Crawl
+
+#Longsword=$(Acc=+1;Bdmg=9;AtkDelay=1.4;MinDelay=0.7; DPS=$(($Bdmg * $(($AtkDelay+$MinDelay/2)) )); echo -e "Longsword; Acc; $Acc - Base DMG; $Bdmg - Attack Delay; $AtkDelay - Minimum Delay; $MinDelay - DPS; $DPS"); echo -e $Longsword 
+
+# Colors
+RED='\033[31m'
+GREEN='\033[32m'
+YELLOW='\033[33m'
+BLUE='\033[34m'
+PURPLE='\033[35m'
+LBLUE='\033[36m'
+NORMAL='\033[0m'
+
+Acc=0
+BaseDmg=0
+AtkDelay=0
+MinDelay=0
+DPS=0
+
+if [[ $# -lt 5 ]] ; then
+	echo -e "Usage -- help"
+	echo -e "$0 {Name} {Accuracy} {Base Damage} {Attack Delay} {Minimum Attack Delay}"
+	echo -e "for example"
+	echo -e "\tDescription\tAcc\tBDmg\tADelay\tMDelay\tDPS"
+	echo -e "\tDummyWep\t${GREEN}1${NORMAL}\t9${NORMAL}\t${LBLUE}1.4${NORMAL}
+\t${LBLUE}0.7${NORMAL}\t${RED}14.5${NORMAL}" 
+	#if [[ -f /tmp/crawl.weapons ]] ; then
+	#	$0 /tmp/crawl.weapons
+	#fi
+fi
+
+if [[ $# == 5 ]] ; then
+	Name=$1
+	Acc=$2
+	BaseDmg=$3
+	AtkDelay=$4
+	MinDelay=$5
+	DPS=$(( $BaseDmg * $(( $AtkDelay + $MinDelay / 2)) ))
+	
+	echo -e "\tDescription\tAcc\tBDmg\tADelay\tMDelay\tDPS"
+	echo -e "\t${GREEN}$Name${NORMAL}\t${GREEN}$Acc${NORMAL}\t${YELLOW}\
+$BaseDmg${NORMAL}\t${LBLUE}$AtkDelay${NORMAL}\t${LBLUE}$MinDelay${NORMAL}\t${RED}$DPS${NORMAL}"
+
+	#Also, try to save information in /tmp
+	echo -e "$Name $Acc $BaseDmg $AtkDelay $MinDelay\n" >> /tmp/crawl.weapons
+fi 
+
+# Try to make a shorter calculator
+
+if [[ $# -lt 5 ]] && [[ $1 == "table" ]] ; then
+	echo -e "Printing Table"
+	echo -e "\tDescription\tAcc\tBDmg\tADelay\tMDelay\tDPS"
+	echo -e "\t${GREEN}$Name${NORMAL}\t${GREEN}$Acc${NORMAL}\t${YELLOW}\
+$BaseDmg${NORMAL}\t${LBLUE}$AtkDelay${NORMAL}\t${LBLUE}$MinDelay${NORMAL}\t${RED}$DPS${NORMAL}"
+	echo -e "Longsword"
+	echo -e "ShortSword"
+	echo -e "Halberd"
+	echo -e "Spear"
+	echo -e "Polearm"

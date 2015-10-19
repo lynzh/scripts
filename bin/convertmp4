@@ -4,14 +4,14 @@
 SCRIPT_STARTED=$(date +%s) # Seconds since 1970-01-01 00:00:00 UTC
 FILE=''
 
-for FILE in *
+for FILE in *mp4
 do
 
 	mp4_rm_mp4=$(ls "${FILE}" | sed 's/\.mp4//g') # Renameing scheme mp4 -> wav
 	mp4_rm_space=$(echo "${mp4_rm_mp4}" | sed 's/\ /_/g') # replace space with _'s 
 
 	# this string converts mp4 files in current dir to wave
-	mplayer "${FILE}" -ao pcm:file="${mp4_rm_space}.wav" -novideo -really-quiet	
+	mplayer "${FILE}" -ao pcm:file="${mp4_rm_space}.wav" -novideo	
 done
 
 SCRIPT_DONE=$(date +%s) # Seconds since beginning of time

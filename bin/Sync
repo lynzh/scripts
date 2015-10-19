@@ -1,0 +1,134 @@
+#!/bin/sh
+# Script takes a backup of regular config files
+
+# Try to parse argument to update to ccnp or domeneshop
+
+if [ $# -lt 1 ];
+	then
+	echo "This program takes argument to provide host for remote backups"
+	echo "\tUsage"
+	echo "$0 hostname"
+	exit 1
+elif [ $1 = "ccnp" ];
+	then
+	remote_host=ccnp
+elif [ $1 = "dm" ];
+	then
+	remote_host=dm
+fi
+
+
+# Personalized user config
+USRConf=$HOME/.conf
+
+BackupDone=$(echo "Update complete to remote shell today at ")
+AbortMsg=$(echo "Aborting")
+BKD=$HOME/scripts/backup
+RemoteDirectory=backup/
+ZSHCONF=$HOME/.zshrc
+#XRGCONF=/etc/X11/xorg.conf
+SSHConf=$HOME/.ssh/config
+VimConf=$HOME/.vimrc
+XdfConf=$HOME/.Xresources
+rToConf=$HOME/.rtorrent.rc
+BASHRC=$HOME/.bashrc
+XINITRC=$HOME/.xinitrc
+PROFILE=$HOME/.profile
+#DWMCONF=$HOME/dwm-6.0/config.h
+
+if test ! -d $BKD; then
+	mkdir $BKD
+elif test -d $BKD; then
+continue
+fi
+
+RSYNC_LOCAL()
+{	
+	rsync $ZSHCONF $BKD/zshrc
+	rsync ~/.ssh/config $BKD/config
+	rsync $BASHRC $BKD/bashrc
+	#rsync /etc/X11/xorg.conf $BKD/xorg.conf
+	rsync $VimConf $BKD/vimrc
+	rsync $USRConf $BKD/conf
+	rsync ~/.rtorrent.rc $BKD/rtorrent.rc
+	rsync $XdfConf $BKD/Xresources
+	rsync $XINITRC $BKD/xinitrc
+	rsync $PROFILE $BKD/profile
+#	rsync $DWMCONF "$BDK/config.h"
+}
+
+RSYNC_REMOTE()
+{
+	rsync -t --append /home/lynzh/scripts/backup/* ${remote_host}:backup/	
+} 
+
+RSYNC_GET()
+{
+	rsync -tu ${remote_host}:backup/* $BKD
+	echo "\
+##### GREAT SUCCESS #####\n
+\tRun these commands if you wish to append the local files with the remote backup:\n\
+rsync --append $BKD/vimrc \"$VimConf\"
+rsync --append $BKD/conf \"$USRConf\"
+rsync --append $BKD/config \"$SSHConf\"
+rsync --append $BKD/Xresources \"$HOME/.Xresources\"
+rsync --append $BKD/rtorrent.rc \"$rToConf\"
+rsync --append $BKD/bashrc \"$BASHRC\"
+rsync --append $BKD/profile \"$PROFILE\"
+rsync --append $BKD/xinitrc \"$XINITRC\"
+rsync --append \"$BKD/config.h\" \"$DWMCONF\""
+}	
+
+RSYNC_DEPLOY()
+{
+	rsync
+}
+
+echo "Want copy files from their place to $BKD? (yna)\c :"
+read answer
+	case $answer in
+		Yes|yes|Y|y)
+		echo "Checklist making backup of configs, storing & syncing."
+		RSYNC_LOCAL
+		;;
+		No|no|N|n)
+		echo "No update"
+		;;
+		a)
+		Time=$(date '+%H:%M'); echo "$AbortMsg at $Time"
+		exit 1
+		;;
+	esac
+echo "Want to put files from $BKD to remote host? (yna)\c :"
+read answer
+	case $answer in
+	    Yes|yes|Y|y)
+		RSYNC_REMOTE; Time=$(date '+%H:%M')
+		echo "$BackupDone at $Time"
+	    ;;
+		N|n|No|no)
+		echo "No Sync"
+		;;
+		*)
+		Time=$(date '+%H:%M')
+		echo "$AbortMsg at $Time"
+		exit 1
+		;;
+	esac
+echo "Want to get remote files and put them in $BKD ? (yna)\c :"
+read answer
+	case $answer in
+		y|Yes|yes|Y)
+		RSYNC_GET
+		echo "Files were grabbed and put in $BKD"
+		;;
+		n|N|No|no)
+		echo "No backup"
+		;;
+		*)
+		Time=$(date '+%H:%M')
+		echo "$AbortMsg at $Time"
+		exit 1
+		;;
+	esac
+return

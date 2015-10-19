@@ -1,0 +1,10 @@
+
+URxvt*saveLines:	12000
+URxvt*font: xft:DejaVu Sans Mono:pixelsize=18:antialias=true:hinting=true
+URxvt*boldFont: xft:DejaVu Sans Mono:pixelsize=18:antialias=true:hinting=true
+URxvt*scrollBar:	False
+URxvt*scrollBar_right:	False
+URxvt*foreground:	White
+URxvt*background:	Black
+URxvt*scrollstyle:	rxvt
+URxvt*url-launcher:	/usr/bin/iceweasel

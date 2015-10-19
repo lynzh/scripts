@@ -1,0 +1,5 @@
+#!/bin/sh
+if test -f /usr/bin/rsync; then
+echo y
+elif test -f 
+echo $(find /usr/bin -iname rsync)

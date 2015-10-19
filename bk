@@ -1,0 +1,33 @@
+#!/bin/sh
+#
+# Script to make MakeBackupTar of scripts/ and writing/
+
+SDIR=$HOME/scripts
+WDIR=$HOME/writing
+
+UnwantedFile() {
+				if -f $HOME/scripts/core ; then
+								rm $HOME/scripts/core
+				fi
+
+				if -f $HOME/writing/core ; then
+								rm $HOME/writing/core
+				fi
+}
+
+
+MakeBackupTar() { 
+				tar -cf scripts.tar $HOME/scripts/*
+				tar -cf writing.tar $HOME/writing/*
+}
+
+SendBackup() 
+{
+				scp scripts.tar ${host}
+
+echo "Using $SDIR and $WDIR"
+
+UnwantedFile
+MakeBackupTar
+
+

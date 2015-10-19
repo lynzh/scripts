@@ -1,0 +1,26 @@
+#!/bin/sh
+
+if [ $(echo $USER) != "root" ]
+	then
+	echo "Script must be run with root access" 1>&2
+	echo "Usage" 1>&2
+	echo "\tsudo $0" 1>&2
+	exit 1
+elif [ $(echo $USER) = "root" ]
+	then
+	MSG="[ ok ] login successful, attempting to mount disks"
+	DISK1=/dev/mapper/testvg-1TB
+	MNT1=/mnt/1TB
+	IOMEGA=/dev/disk/by-uuid/E6B2-24A0 
+	MNT3=/mnt/iomega
+#	DISK2=/dev/mapper/testvg-2TB
+#	MNT2=/mnt/2TB
+#	[ -b $DISK2 ] && mount $DISK2 $MNT2
+
+	[ ! -d $MNT3 ] && mkdir $MNT3
+	[ ! -d $MNT1 ] && mkdir $MNT1
+
+	echo $MSG
+	[ -b $DISK1 ] && mount $DISK1 $MNT1
+	[ -b $IOMEGA ] && mount $IOMEGA $MNT3
+fi

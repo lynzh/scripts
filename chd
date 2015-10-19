@@ -1,0 +1,7 @@
+#!/bin/sh
+
+RunDF()
+{
+	df -h | cat
+}
+RunDF

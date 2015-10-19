@@ -1,0 +1,25 @@
+#!/bin/zsh
+#
+# Mathdoodle
+
+a=1
+b=1
+math_operator=( + + + "*" "*" - )
+MathCounter=1
+PCOUNT=0
+
+while sleep 0.1
+do
+	c=$((${a} ${math_operator[${MathCounter}]} ${b}))
+	echo "${a}\t${math_operator[${MathCounter}]}\t${b}\t = $c"
+	((MathCounter++))
+	((a++))
+
+	[ $MathCounter -gt 6 ] && MathCounter=1; PCOUNT=$(($PCOUNT+1))
+
+	if [ $a -gt $(($PCOUNT)) ] 
+	then
+		((b++))
+		a=$PCOUNT
+	fi
+done

@@ -1,0 +1,21 @@
+BEGIN {
+	print "-------------------------------"
+	print "ARDUINO ACCESSORIES LIST       "
+	print "By lynzh         		      "
+	print "-------------------------------"
+}
+
+{
+	quantity = $3
+	total = $3 * $4
+	recno $1
+	item = $2
+	gtotal += total
+	print quantity " items of " item "\t Rs. " total " NOK "
+}
+
+END {
+	print "-------------------------------"
+	print "Total Cost: " gtotal " NOK "
+	print "-------------------------------"
+}

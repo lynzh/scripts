@@ -1,0 +1,10 @@
+#!/bin/sh
+#
+first=''
+second=''
+third=''
+fourth=''
+
+echo "State the range of IP addr :"
+read first, second, third, fourth
+echo "ip addr: $first.$second.$third.$fourth"
