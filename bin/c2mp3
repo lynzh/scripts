@@ -1,0 +1,23 @@
+#!/bin/sh
+# Script to convert wav to mp3
+
+SCRIPT_STARTED=$(date +%s) # Seconds since 1970-01-01 00:00:00 UTC
+FILE=''
+
+for FILE 
+do
+	mp4_rm_mp4=$(ls "${FILE}" | sed 's/\.mp4//g' | sed 's/\.flv//g' | sed 's/\.webm//g') # Renameing scheme mp4 -> wav
+	mp4_rm_space=$(echo "${mp4_rm_mp4}" | sed 's/\ /_/g') # replace space with _'s 
+	mp4_add_320=$(echo "${mp4_rm_space}" | sed 's/_-_YouTube//g' | sed 's/(High)//g') # remove .wav, add 320k 
+	mp4_rm_tag_hd=$(echo "${mp4_add_320}" | sed 's/_(HQ)//g' | sed 's/_(HD)//g' | sed 's/(HD)_//g' | sed 's/(HQ)_//g') # remove (HD) and (HQ) tag 
+	
+	# with "nice" to allow 10% CPU this string convers raw wave output to lame mp3
+	nice ffmpeg -i "${FILE}" -vn -codec:a libmp3lame -b:a 320k -ar 44100 -ac 2 "${mp4_rm_tag_hd}_320k.mp3" 
+done
+
+SCRIPT_DONE=$(date +%s) # Seconds since beginning of time
+SCRIPT_TIME=$(( $SCRIPT_DONE - $SCRIPT_STARTED ))
+[[ $SCRIPT_TIME -lt 60 ]] && echo "*** converting was done in $SCRIPT_TIME seconds ***" \||
+SCRIPT_TIME_MINUTES=$(($SCRIPT_TIME/60)) \
+&& echo -e "*** converting was done in $SCRIPT_TIME_MINUTES minutes ***"
+

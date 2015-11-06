@@ -4,7 +4,7 @@
 SCRIPT_STARTED=$(date +%s) # Seconds since 1970-01-01 00:00:00 UTC
 FILE=''
 
-for FILE in *mp4
+for FILE 
 do
 
 	mp4_rm_mp4=$(ls "${FILE}" | sed 's/\.mp4//g') # Renameing scheme mp4 -> wav
