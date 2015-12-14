@@ -1,0 +1,26 @@
+#!/bin/sh
+# Script that interacts with the finn function
+# which is find / -iname $@ 2>/dev/null
+# if there is only one entry, this script uses cat and pipes it to the pager less
+
+TimeStarted=$(date +%H%M%S)
+
+catfind()
+{
+	cat $(finn $@) | less
+}
+
+if [ $# -lt 1 ]
+then
+	echo "Usage -- $0 {document you wanna find}" 1>&2
+	echo "Error, no input given" 1>&2
+	exit 1
+elif [ $# -gt 0 ]
+then
+	catfind $@
+	TimeUsed=$(date +%H%M%S)
+	TimeDiff=$(($TimeUsed-$TimeStarted))
+	echo "$0 used $TimeDiff seconds to load page"
+	return
+fi
+

@@ -26,12 +26,15 @@ AbortMsg=$(echo "Aborting")
 BKD=$HOME/scripts/backup
 RemoteDirectory=backup/
 ZSHCONF=$HOME/.zshrc
-XRGCONF=/etc/X11/xorg.conf
+#XRGCONF=/etc/X11/xorg.conf
 SSHConf=$HOME/.ssh/config
 VimConf=$HOME/.vimrc
 XdfConf=$HOME/.Xresources
 rToConf=$HOME/.rtorrent.rc
 BASHRC=$HOME/.bashrc
+XINITRC=$HOME/.xinitrc
+PROFILE=$HOME/.profile
+#DWMCONF=$HOME/dwm-6.0/config.h
 
 if test ! -d $BKD; then
 	mkdir $BKD
@@ -44,11 +47,14 @@ RSYNC_LOCAL()
 	rsync $ZSHCONF $BKD/zshrc
 	rsync ~/.ssh/config $BKD/config
 	rsync $BASHRC $BKD/bashrc
-	rsync /etc/X11/xorg.conf $BKD/xorg.conf
+	#rsync /etc/X11/xorg.conf $BKD/xorg.conf
 	rsync $VimConf $BKD/vimrc
 	rsync $USRConf $BKD/conf
 	rsync ~/.rtorrent.rc $BKD/rtorrent.rc
 	rsync $XdfConf $BKD/Xresources
+	rsync $XINITRC $BKD/xinitrc
+	rsync $PROFILE $BKD/profile
+#	rsync $DWMCONF "$BDK/config.h"
 }
 
 RSYNC_REMOTE()
@@ -59,17 +65,26 @@ RSYNC_REMOTE()
 RSYNC_GET()
 {
 	rsync -tu ${remote_host}:backup/* $BKD
-	echo "\tRun these commands if you wish to append the local files with the remote backup:\n\
-rsync --append $BKD/vimrc $VimConf
-rsync --append $BKD/conf $USRConf
-rsync --append $BKD/config $SSHConf
-rsync --append $BKD/Xresources $HOME/.Xresources
-rsync --append $BKD/config $HOME/.ssh/config
-rsync --append $BKD/rtorrent.rc $rToConf
-rsync --append $BKD/bashrc $BASHRC"
+	echo "\
+##### GREAT SUCCESS #####\n
+\tRun these commands if you wish to append the local files with the remote backup:\n\
+rsync --append $BKD/vimrc \"$VimConf\"
+rsync --append $BKD/conf \"$USRConf\"
+rsync --append $BKD/config \"$SSHConf\"
+rsync --append $BKD/Xresources \"$HOME/.Xresources\"
+rsync --append $BKD/rtorrent.rc \"$rToConf\"
+rsync --append $BKD/bashrc \"$BASHRC\"
+rsync --append $BKD/profile \"$PROFILE\"
+rsync --append $BKD/xinitrc \"$XINITRC\"
+rsync --append \"$BKD/config.h\" \"$DWMCONF\""
 }	
 
-echo "Want to update (local $BKD with configs)? (yna)\c :"
+RSYNC_DEPLOY()
+{
+	rsync
+}
+
+echo "Want copy files from their place to $BKD? (yna)\c :"
 read answer
 	case $answer in
 		Yes|yes|Y|y)
@@ -84,7 +99,7 @@ read answer
 		exit 1
 		;;
 	esac
-echo "Want to sync? (yna)\c :"
+echo "Want to put files from $BKD to remote host? (yna)\c :"
 read answer
 	case $answer in
 	    Yes|yes|Y|y)
@@ -100,7 +115,7 @@ read answer
 		exit 1
 		;;
 	esac
-echo "Get backup? (yna)\c :"
+echo "Want to get remote files and put them in $BKD ? (yna)\c :"
 read answer
 	case $answer in
 		y|Yes|yes|Y)

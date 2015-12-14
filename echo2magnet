@@ -1,0 +1,4 @@
+#!/bin/sh
+# script to parse information to a file
+
+echo "$@" >> $HOME/writing/magnetfile

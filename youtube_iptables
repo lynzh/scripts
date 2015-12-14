@@ -1,0 +1,5 @@
+#!/bin/sh
+# script to deny youtube streaming server
+
+iptables -A INPUT -s 173.194.55.0/24 -j REJECT
+iptables -A INPUT -s 206.111.0.0/24 -j REJECT

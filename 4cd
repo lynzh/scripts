@@ -1,0 +1,4 @@
+#!/bin/bash
+# Script to parse imageboard/4chan links and download them
+
+curl http://boards.4chan.org/w/thread/1824931/some-night-sky-wallpapers | grep -Poz 'i\.4cdn\.org[^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^ ][^>][^-][^ ][^ ][^ ][^ ][^s]\.[^ ][^ ][^ ]' | xargs -a - wget -nv -nc -x

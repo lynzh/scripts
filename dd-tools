@@ -1,0 +1,10 @@
+#!/bin/sh
+# Script to have a description of personal dd tools
+	
+echo -e "dd-pid; Use to output PID of dd"; 
+which dd-pid; 
+echo -e "\ndd-check; Use to see progress of dd"; 
+which dd-check; 
+echo -e "\ndd-watch; Use to see progress each {N} seconds\ndd-watch; \
+breaks if dd-pid is no more\ndd-watch; Usage: dd-watch {100}" ; 
+which dd-watch

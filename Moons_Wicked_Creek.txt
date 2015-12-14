@@ -1,0 +1,714 @@
+
+###### M-MD3B ######
+
+M-MD3B I Planet (Lava)
+M-MD3B II Planet (Barren)
+M-MD3B III Planet (Barren)
+    M-MD3B III - Moon 1
+		Atmospheric Gases	1
+		Scandium			1
+		Silicates			1
+    M-MD3B III - Moon 2
+		Evaporite Deposits	1
+M-MD3B IV Planet (Gas)
+    M-MD3B IV - Moon 1
+    M-MD3B IV - Moon 2
+		Hydrocarbons		2
+		Silicates			1
+M-MD3B V Planet (Lava)
+    M-MD3B V - Moon 1
+		Hydrocarbons		2
+    M-MD3B V - Moon 2
+    M-MD3B V - Moon 3
+		Scandium			1
+M-MD3B VI Planet (Gas)
+    M-MD3B VI - Moon 1
+		Evaporite Deposits	1
+    M-MD3B VI - Moon 2
+    M-MD3B VI - Moon 3
+		Atmospheric Gases	2
+		Evaporite Deposits	1
+		Hydrocarbons		1
+    M-MD3B VI - Moon 4
+M-MD3B VII Planet (Gas)
+    M-MD3B VII - Moon 1
+    M-MD3B VII - Moon 2
+		Hydrocarbons		1
+M-MD3B VIII Planet (Storm)
+    M-MD3B VIII - Moon 1
+    M-MD3B VIII - Moon 2
+		Atmospheric Gases	2
+		Silicates			1
+M-MD3B IX Planet (Temperate)
+    M-MD3B IX - Moon 1
+		Silicates			1
+    M-MD3B IX - Moon 2
+M-MD3B X Planet (Barren)
+    M-MD3B X - Moon 1
+		Scandium			1
+    M-MD3B X - Moon 2
+		Atmospheric Gases	1
+		Silicates			2
+    M-MD3B X - Moon 3
+M-MD3B XI Planet (Oceanic)
+M-MD3B XII Planet (Barren)
+    M-MD3B XII - Moon 1
+		Atmospheric Gases	1
+		Hydrocarbons		3
+    M-MD3B XII - Moon 2
+    M-MD3B XII - Moon 3
+		Atmospheric Gases	2
+		Vanadium			1
+	
+	
+#######################
+###### NIH-02	#######
+
+NIH-02 I Planet (Barren)
+NIH-02 II Planet (Lava)
+NIH-02 III Planet (Storm)
+    NIH-02 III - Moon 1
+		Hydrocarbons		1
+NIH-02 IV Planet (Storm)
+    NIH-02 IV - Moon 1
+    NIH-02 IV - Moon 2
+		Hydrocarbons		1
+NIH-02 V Planet (Gas)
+    NIH-02 V - Moon 1
+		Silicates			1
+    NIH-02 V - Moon 2
+		Hydrocarbons		1
+    NIH-02 V - Moon 3
+		Atmospheric Gases	1
+		Hydrocarbons		1
+    NIH-02 V - Moon 4
+		Atmospheric Gases	1
+		Hydrocarbons		1
+    NIH-02 V - Moon 5
+		Hydrocarbons		1
+		Scandium			1
+		Silicates			1
+    NIH-02 V - Moon 6
+		Evaporite Deposits	1
+    NIH-02 V - Moon 7
+		Atmospheric Gases	1
+		Evaporite Deposits	1
+    NIH-02 V - Moon 8
+		Hydrocarbons		1
+		Scandium			1
+		Silicates			2
+    NIH-02 V - Moon 9
+    NIH-02 V - Moon 10
+		Atmospheric Gases	1
+		Scandium			1
+    NIH-02 V - Moon 11
+NIH-02 VI Planet (Gas)
+    NIH-02 VI - Moon 1
+		Atmospheric Gases	1
+		Scandium			1
+    NIH-02 VI - Moon 2
+    NIH-02 VI - Moon 3
+    NIH-02 VI - Moon 4
+    NIH-02 VI - Moon 5
+    NIH-02 VI - Moon 6
+		Atmospheric Gases	1
+		Evaporite Deposits	2
+		Hydrocarbons		1
+    NIH-02 VI - Moon 7
+		Evaporite Deposits	1
+		Silicates			1
+    NIH-02 VI - Moon 8
+		Silicates			2
+    NIH-02 VI - Moon 9
+    NIH-02 VI - Moon 10
+    NIH-02 VI - Moon 11
+		Evaporite Deposits	1
+    NIH-02 VI - Moon 12
+		Hydrocarbons		1
+    NIH-02 VI - Moon 13
+		Evaporite Deposits	2
+    NIH-02 VI - Moon 14
+    NIH-02 VI - Moon 15
+		Evaporite Deposits	1
+    NIH-02 VI - Moon 16
+		Evaporite Deposits	1
+    NIH-02 VI - Moon 17
+    NIH-02 VI - Moon 18
+    NIH-02 VI - Moon 19
+    NIH-02 VI - Moon 20
+    NIH-02 VI - Moon 21
+    NIH-02 VI - Moon 22
+NIH-02 VII Planet (Gas)
+    NIH-02 VII - Moon 1
+		Hydrocarbons		1
+    NIH-02 VII - Moon 2
+		Atmospheric Gases	1
+		Platinum			1
+    NIH-02 VII - Moon 3
+    NIH-02 VII - Moon 4
+		Evaporite Deposits	1
+		Silicates			1
+    NIH-02 VII - Moon 5
+		Atmospheric Gases	1
+    NIH-02 VII - Moon 6
+		Atmospheric Gases	1
+    NIH-02 VII - Moon 7
+		Hydrocarbons		1
+    NIH-02 VII - Moon 8
+		Evaporite Deposits	1
+		Silicates			1
+    NIH-02 VII - Moon 9
+    NIH-02 VII - Moon 10
+		Atmospheric Gases	1
+    NIH-02 VII - Moon 11
+    NIH-02 VII - Moon 12
+		Atmospheric Gases	1
+		Hydrocarbons		1
+    NIH-02 VII - Moon 13
+    NIH-02 VII - Moon 14
+		Hydrocarbons		1
+		Platinum			1
+		Silicates			1
+NIH-02 VIII Planet (Gas)
+    NIH-02 VIII - Moon 1
+		Atmospheric Gases	1
+    NIH-02 VIII - Moon 2
+    NIH-02 VIII - Moon 3
+    NIH-02 VIII - Moon 4
+    NIH-02 VIII - Moon 5
+    NIH-02 VIII - Moon 6
+    NIH-02 VIII - Moon 7
+		Evaporite Deposits	1
+		Hydrocarbons		1
+		Mercury				1
+		Silicates			1
+    NIH-02 VIII - Moon 8
+		Atmospheric Gases	1
+		Platinum			1
+    NIH-02 VIII - Moon 9
+		Atmospheric Gases	1
+    NIH-02 VIII - Moon 10
+    NIH-02 VIII - Moon 11
+    NIH-02 VIII - Moon 12
+    NIH-02 VIII - Moon 13
+		Atmospheric Gases	1
+    NIH-02 VIII - Moon 14
+		Hydrocarbons		1
+    NIH-02 VIII - Moon 15
+    NIH-02 VIII - Moon 16
+		Silicates			1
+    NIH-02 VIII - Moon 17
+		Evaporite Deposits	1
+		Hydrocarbons		1
+		Silicates			1
+    NIH-02 VIII - Moon 18
+		Atmospheric Gases	2
+		Silicates			1
+    NIH-02 VIII - Moon 19
+    NIH-02 VIII - Moon 20
+		Hydrocarbons		2
+    NIH-02 VIII - Moon 21
+		Evaporite Deposits	1
+		Silicates			1
+    NIH-02 VIII - Moon 22
+		Silicates			1
+    NIH-02 VIII - Moon 23
+    NIH-02 VIII - Moon 24
+	
+##### N-DQ0D #####
+
+N-DQ0D I Planet (Lava)
+N-DQ0D II Planet (Barren)
+N-DQ0D III Planet (Lava)
+    N-DQ0D III - Moon 1
+		Has POS, FF+GUNS
+N-DQ0D IV Planet (Oceanic)
+N-DQ0D V Planet (Temperate)
+    N-DQ0D V - Moon 1
+N-DQ0D VI Planet (Gas)
+    N-DQ0D VI - Moon 1
+		Has POS, has FF, no guns
+		no materials??!
+    N-DQ0D VI - Moon 2
+		Has POS, has FF, no guns
+		Evaporite Deposits	1
+		Hydrocarbons		2
+    N-DQ0D VI - Moon 3
+		Has POS, No FF
+		Evaporite Deposits	1
+		Hydrocarbons		1
+		Silicates			1
+    N-DQ0D VI - Moon 4
+    N-DQ0D VI - Moon 5
+		Evaporite Deposits	1
+    N-DQ0D VI - Moon 6
+		Atmospheric Gases	2
+		Silicates			1
+    N-DQ0D VI - Moon 7
+N-DQ0D VII Planet (Gas)
+    N-DQ0D VII - Moon 1
+    N-DQ0D VII - Moon 2
+		Scandium			1
+    N-DQ0D VII - Moon 3
+		Silicates			1
+    N-DQ0D VII - Moon 4
+    N-DQ0D VII - Moon 5
+    N-DQ0D VII - Moon 6
+    N-DQ0D VII - Moon 7
+    N-DQ0D VII - Moon 8
+    N-DQ0D VII - Moon 9
+		POS, No FF
+		Atmospheric Gases	1
+		Evaporite Deposits	1
+		Silicates			1
+    N-DQ0D VII - Moon 10
+    N-DQ0D VII - Moon 11
+		Silicates			2
+    N-DQ0D VII - Moon 12
+    N-DQ0D VII - Moon 13
+    N-DQ0D VII - Moon 14
+		POS, No FF
+		Atmospheric Gases	1
+		Evaporite Deposits	1
+		Scandium			1
+		Silicates			1
+		
+##### LXTC-S #####
+
+LXTC-S I Planet (Barren)
+LXTC-S II Planet (Lava)
+LXTC-S III Planet (Temperate)
+    LXTC-S III - Moon 1
+		Hydrocarbons		1
+		Silicates			1
+LXTC-S IV Planet (Barren)
+LXTC-S V Planet (Barren)
+    LXTC-S V - Moon 1
+		Evaporite Deposits	1
+		Hydrocarbons		1
+LXTC-S VI Planet (Gas)
+    LXTC-S VI - Moon 1
+		HAS POS,FF,GUNS
+		Hydrocarbons		1
+		Vanadium			1
+    LXTC-S VI - Moon 2
+		Atmospheric Gases	1
+    LXTC-S VI - Moon 3
+		Atmospheric Gases	1
+    LXTC-S VI - Moon 4
+LXTC-S VII Planet (Storm)
+    LXTC-S VII - Moon 1
+		HAS POS,FF,GUNS
+		Silicates			1
+		Vanadium			1
+    LXTC-S VII - Moon 2
+		Atmospheric Gases	1
+		Evaporite Deposits	1
+		Hydrocarbons		2
+LXTC-S VIII Planet (Gas)
+    LXTC-S VIII - Moon 1
+    LXTC-S VIII - Moon 2
+    LXTC-S VIII - Moon 3
+    LXTC-S VIII - Moon 4
+		HAS POS,FF,GUNS
+		Scandium			1
+    LXTC-S VIII - Moon 5
+    LXTC-S VIII - Moon 6
+		Scandium			1
+    LXTC-S VIII - Moon 7
+    LXTC-S VIII - Moon 8
+		HAS POS,FF,GUNS
+		Platinum			1
+    LXTC-S VIII - Moon 9
+    LXTC-S VIII - Moon 10
+		Atmospheric Gases	1
+    LXTC-S VIII - Moon 11
+		Evaporite Deposits	1
+    LXTC-S VIII - Moon 12
+    LXTC-S VIII - Moon 13
+		Scandium			1
+		Silicates			2
+    LXTC-S VIII - Moon 14
+		Hydrocarbons		1
+    LXTC-S VIII - Moon 15
+    LXTC-S VIII - Moon 16
+		HAS POS,FF,GUNS
+		Evaporite Deposits	1
+		Scandium			1
+		Silicates			1
+LXTC-S IX Planet (Temperate)
+    LXTC-S IX - Moon 1
+    LXTC-S IX - Moon 2
+		Atmospheric Gases	1
+		Silicates			1
+LXTC-S X Planet (Gas)
+    LXTC-S X - Moon 1
+    LXTC-S X - Moon 2
+		Atmospheric Gases	1
+		Hydrocarbons		1
+    LXTC-S X - Moon 3
+		Has POS;GUNS,FF
+		Evaporite Deposits	1
+		Hydrocarbons		1
+		Silicates			1
+    LXTC-S X - Moon 4
+		Hydrocarbons		1
+		Silicates			1
+    LXTC-S X - Moon 5
+		Evaporite Deposits	1
+		Scandium			1
+    LXTC-S X - Moon 6
+LXTC-S XI Planet (Oceanic)
+    LXTC-S XI - Moon 1
+	
+	
+##### WE3-BX #####
+
+WE3-BX I Planet (Lava)
+WE3-BX II Planet (Barren)
+WE3-BX III Planet (Storm)
+    WE3-BX III - Moon 1
+		Atmospheric Gases	1
+		Hydrocarbons		1
+WE3-BX IV Planet (Temperate)
+    WE3-BX IV - Moon 1
+		Atmospheric Gases	2
+		Scandium			2
+    WE3-BX IV - Moon 2
+WE3-BX V Planet (Storm)
+    WE3-BX V - Moon 1
+		Evaporite Deposits	1
+	
+###### H-8F5Q ######
+
+H-8F5Q I Planet (Lava)
+H-8F5Q II Planet (Barren)
+H-8F5Q III Planet (Barren)
+H-8F5Q IV Planet (Barren)
+    H-8F5Q IV - Moon 1
+    H-8F5Q IV - Moon 2
+H-8F5Q V Planet (Barren)
+H-8F5Q VI Planet (Barren)
+H-8F5Q VII Planet (Temperate)
+    H-8F5Q VII - Moon 1
+		Had* POS, empty now
+		Chromium			1
+		Hydrocarbons		1
+    H-8F5Q VII - Moon 2
+		Has POS
+		No materials? thats right.
+    H-8F5Q VII - Moon 3
+	
+###### H7O-JZ ######
+
+H7O-JZ I Planet (Barren)
+H7O-JZ II Planet (Lava)
+    H7O-JZ II - Moon 1
+		Atmospheric Gases	1
+		Evaporite Deposits	1
+H7O-JZ III Planet (Temperate)
+    H7O-JZ III - Moon 1
+		Hydrocarbons		1
+		Silicates			1
+H7O-JZ IV Planet (Gas)
+    H7O-JZ IV - Moon 1
+		Evaporite Deposits	1
+		Hydrocarbons		1
+    H7O-JZ IV - Moon 2
+    H7O-JZ IV - Moon 3
+    H7O-JZ IV - Moon 4
+    H7O-JZ IV - Moon 5
+    H7O-JZ IV - Moon 6
+    H7O-JZ IV - Moon 7
+		Atmospheric Gases	1
+    H7O-JZ IV - Moon 8
+		Hydrocarbons		1
+    H7O-JZ IV - Moon 9
+    H7O-JZ IV - Moon 10
+    H7O-JZ IV - Moon 11
+    H7O-JZ IV - Moon 12
+    H7O-JZ IV - Moon 13
+		Silicates			1
+    H7O-JZ IV - Moon 14
+    H7O-JZ IV - Moon 15
+    H7O-JZ IV - Moon 16
+		Recently taken down POS
+		Chromium			1
+		Evaporite Deposits	1
+		Scandium			1
+    H7O-JZ IV - Moon 17
+		Atmospheric Gases	1
+		Hydrocarbons		1
+    H7O-JZ IV - Moon 18
+		Hydrocarbons		1
+		Scandium			1
+H7O-JZ V Planet (Oceanic)
+    H7O-JZ V - Moon 1
+		Atmospheric Gases	2
+H7O-JZ VI Planet (Barren)
+    H7O-JZ VI - Moon 1
+    H7O-JZ VI - Moon 2
+    H7O-JZ VI - Moon 3
+    H7O-JZ VI - Moon 4
+	
+###### O-RXCZ ######
+
+O-RXCZ I Planet (Barren)
+O-RXCZ II Planet (Barren)
+O-RXCZ III Planet (Storm)
+    O-RXCZ III - Moon 1
+		Atmospheric Gases	1
+		Silicates			1
+O-RXCZ IV Planet (Oceanic)
+O-RXCZ V Planet (Gas)
+    O-RXCZ V - Asteroid Belt 1
+    O-RXCZ V - Moon 1
+    O-RXCZ V - Moon 2
+    O-RXCZ V - Moon 3
+		Scandium			1
+		Silicates			1
+    O-RXCZ V - Moon 4
+		Atmospheric Gases	1
+		Scandium			1
+		Silicates			1
+    O-RXCZ V - Moon 5
+    O-RXCZ V - Moon 6
+    O-RXCZ V - Moon 7
+    O-RXCZ V - Moon 8
+		Silicates			2
+    O-RXCZ V - Moon 9
+		Chromium			1
+		Evaporite Deposits	1
+		Hydrocarbons		1
+    O-RXCZ V - Moon 10
+		Atmospheric Gases	2
+    O-RXCZ V - Moon 11
+		Evaporite Deposits	1
+    O-RXCZ V - Moon 12
+    O-RXCZ V - Moon 13
+		Has POS,GUNS,FF
+		Mercury				1
+		Silicates			1
+    O-RXCZ V - Moon 14
+    O-RXCZ V - Moon 15
+		Has POS,GUNS,FF
+		Atmospheric Gases	1
+		Evaporite Deposits	1
+		Hydrocarbons		1
+		Silicates			1
+		Thulium				1
+    O-RXCZ V - Moon 16
+    O-RXCZ V - Moon 17
+		Evaporite Deposits	1
+		Silicates			2
+    O-RXCZ V - Moon 18
+    O-RXCZ V - Moon 19
+		Has POS
+    O-RXCZ V - Moon 20
+    O-RXCZ V - Moon 21
+O-RXCZ VI Planet (Gas)
+    O-RXCZ VI - Moon 1
+		Evaporite Deposits	2
+		Hydrocarbons		1
+		Silicates			1
+    O-RXCZ VI - Moon 2
+		Hydrocarbons		1
+    O-RXCZ VI - Moon 3
+    O-RXCZ VI - Moon 4
+    O-RXCZ VI - Moon 5
+		Evaporite Deposits	1
+		Scandium			1
+    O-RXCZ VI - Moon 6
+		Atmospheric Gases	1
+		Hydrocarbons		1
+		Silicates			2
+    O-RXCZ VI - Moon 7
+		Hydrocarbons		1
+    O-RXCZ VI - Moon 8
+    O-RXCZ VI - Moon 9
+		Has POS,FF,GUNS
+		Scandium			1
+		Vanadium			1
+    O-RXCZ VI - Moon 10
+		Atmospheric Gases	1
+		Silicates			1
+    O-RXCZ VI - Moon 11
+    O-RXCZ VI - Moon 12
+		Evaporite Deposits	1
+    O-RXCZ VI - Moon 13
+		Hydrocarbons		1
+		Silicates			1
+    O-RXCZ VI - Moon 14
+    O-RXCZ VI - Moon 15
+    O-RXCZ VI - Moon 16
+    O-RXCZ VI - Moon 17
+		Evaporite Deposits	1
+		Hydrocarbons		2
+		Scandium			1
+    O-RXCZ VI - Moon 18
+		Atmospheric Gases	2
+		Evaporite Deposits	1
+    O-RXCZ VI - Moon 19
+    O-RXCZ VI - Moon 20
+		Atmospheric Gases	2
+		Silicates			1
+    O-RXCZ VI - Moon 21
+		Atmospheric Gases	1
+		Evaporite Deposits	1
+O-RXCZ VII Planet (Ice)
+    O-RXCZ VII - Asteroid Belt 1
+    O-RXCZ VII - Asteroid Belt 2
+    O-RXCZ VII - Moon 1
+    O-RXCZ VII - Moon 2
+		Atmospheric Gases	1
+		Evaporite Deposits	1
+		Scandium			1
+    O-RXCZ VII - Moon 3
+		Atmospheric Gases	1
+		Evaporite Deposits	1
+    O-RXCZ VII - Moon 4
+	
+###### 4M-P1I ######
+
+4M-P1I I Planet (Lava)
+4M-P1I II Planet (Barren)
+    4M-P1I II - Moon 1
+		POS Recently taken down
+		Platinum			1
+		Scandium			1
+4M-P1I III Planet (Gas)
+    4M-P1I III - Moon 1
+    4M-P1I III - Moon 2
+		Atmospheric Gases	1
+		Hydrocarbons		1
+    4M-P1I III - Moon 3
+		Hydrocarbons		1
+		Silicates			1
+    4M-P1I III - Moon 4
+		Hydrocarbons		1
+		Scandium			1
+    4M-P1I III - Moon 5
+		Hydrocarbons		1
+		Silicates			1
+    4M-P1I III - Moon 6
+		Has POS,GUNS,FF
+		Hafnium				1
+		Hydrocarbons		1
+    4M-P1I III - Moon 7
+		Atmospheric Gases	1
+    4M-P1I III - Moon 8
+    4M-P1I III - Moon 9
+    4M-P1I III - Moon 10
+		Atmospheric Gases	2
+    4M-P1I III - Moon 11
+    4M-P1I III - Moon 12
+    4M-P1I III - Moon 13
+4M-P1I IV Planet (Gas)
+    4M-P1I IV - Moon 1
+		Hydrocarbons		2
+    4M-P1I IV - Moon 2
+    4M-P1I IV - Moon 3
+		Atmospheric Gases	2
+    4M-P1I IV - Moon 4
+    4M-P1I IV - Moon 5
+4M-P1I V Planet (Gas)
+    4M-P1I V - Moon 1
+    4M-P1I V - Moon 2
+		Evaporite Deposits	1
+    4M-P1I V - Moon 3
+    4M-P1I V - Moon 4
+    4M-P1I V - Moon 5
+		POS Recently down
+		Evaporite Deposits	1
+		Vanadium			1
+    4M-P1I V - Moon 6
+    4M-P1I V - Moon 7
+		Evaporite Deposits	1
+    4M-P1I V - Moon 8
+		Atmospheric Gases	1
+		Hydrocarbons		2
+    4M-P1I V - Moon 9
+		Hydrocarbons		1
+		Silicates			1
+    4M-P1I V - Moon 10
+		Scandium			1
+		Silicates			1
+    4M-P1I V - Moon 11
+    4M-P1I V - Moon 12
+		Hydrocarbons		1
+    4M-P1I V - Moon 13
+		Atmospheric Gases	2
+		Evaporite Deposits	1
+    4M-P1I V - Moon 14
+		Evaporite Deposits	1
+		Hydrocarbons		1
+    4M-P1I V - Moon 15
+		Scandium			1
+    4M-P1I V - Moon 16
+		Atmospheric Gases	1
+		Hydrocarbons		1
+    4M-P1I V - Moon 17
+    4M-P1I V - Moon 18
+    4M-P1I V - Moon 19
+		Atmospheric Gases	1
+		Silicates			1
+    4M-P1I V - Moon 20
+    4M-P1I V - Moon 21
+		Evaporite Deposits	2
+		Hydrocarbons		1
+		Scandium			1
+    4M-P1I V - Moon 22
+		Hydrocarbons		1
+		Silicates			1
+4M-P1I VI Planet (Gas)
+    4M-P1I VI - Moon 1
+		Scandium			1
+    4M-P1I VI - Moon 2
+    4M-P1I VI - Moon 3
+    4M-P1I VI - Moon 4
+    4M-P1I VI - Moon 5
+		Has POS,GUNS
+		Evaporite Deposits	1
+		Hydrocarbons		1
+    4M-P1I VI - Moon 6
+    4M-P1I VI - Moon 7
+		Has POS,GUNS,FF
+		Atmospheric Gases	1
+		Hydrocarbons		2
+		Platinum			1
+    4M-P1I VI - Moon 8
+		Hydrocarbons		1
+		Silicates			2
+    4M-P1I VI - Moon 9
+		Atmospheric Gases	2
+    4M-P1I VI - Moon 10
+		Has POS
+		Evaporite Deposits	1
+		Hydrocarbons		1
+    4M-P1I VI - Moon 11
+    4M-P1I VI - Moon 12
+		Hydrocarbons		1
+    4M-P1I VI - Moon 13	
+		Has POS,FF,GUNS
+		Platinum			1
+    4M-P1I VI - Moon 14
+		Evaporite Deposits	1
+		Hydrocarbons		1
+    4M-P1I VI - Moon 15
+    4M-P1I VI - Moon 16
+    4M-P1I VI - Moon 17
+    4M-P1I VI - Moon 18
+		Atmospheric Gases	2
+		Hydrocarbons		1
+		Scandium			1
+    4M-P1I VI - Moon 19
+		Atmospheric Gases	1
+    4M-P1I VI - Moon 20
+4M-P1I VII Planet (Barren)
+    4M-P1I VII - Moon 1
+		Atmospheric Gases	2
+		Hydrocarbons		2
+    4M-P1I VII - Moon 2
+    4M-P1I VII - Moon 3
+		Hydrocarbons		1
+		Silicates			2

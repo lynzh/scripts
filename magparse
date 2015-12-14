@@ -1,0 +1,34 @@
+#!/bin/bash
+# take 2, script to parse magnet links to file
+
+# This step makes sure an argument was passed to the script
+if [[ $# -lt 0 ]];
+then
+  # means number of arguments, if they are 0 we exit
+  echo "EXITING -- No arguments passed" >&2;
+  exit 1;
+fi
+
+
+# Preliminary steps, we want to get the watch directory from here
+RTCONF=$HOME/.rtorrent.rc
+RTWATCHDIR=$(grep -Po "load_start=[\/[:alnum:].]{1,}" "${RTCONF}" | sed 's/load_start=//g');
+
+grep -P "magnet:\?xt=urn:btih:[.%+[:alnum:]-&=]{1,}" "$1" --max-count 1 -o
+# step 1 cat the input to stdin, kaGiantButton is a class on kickass.torrents
+# the first :alnum: takes care of the md5-like hash structure of magnet, 
+# the second :alnum: takes care of the tracker plus announce links and special chars.
+# grep -P uses Perl Regexp, -o says Only output this.
+# Now we want to touch a file with the information from magnet uri
+# Did we reach this step?
+#echo "we reached this step";
+# CODE COURTESY of Max Gonzih @ https://github.com/Gonzih
+# cd ~/.rtorrent/watch || exit;    # set your watch directory here
+#| [[ "$1" =~ xt=urn:btih:([^&/]+) ]] || exit;
+#echo "d10:magnet-uri${#1}:${1}e" > "${RTWATCHDIR}/meta-${BASH_REMATCH[1]}.torrent";
+#xmessage -nearmouse 'torrent added to rtorrent'; 
+# CODE COURTESY of Max Gonzih @ https://github.com/Gonzih
+
+# Did we reach this step? clean up /tmp
+#rm /tmp/$$.magparse
+exit 0;

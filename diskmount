@@ -1,33 +1,26 @@
-#!/bin/bash
-# script to make sure external drives are mounted
+#!/bin/sh
 
-# whattodo command  /dev/disk CryptContainerVolumeGroup
-cryptsetup luksOpen /dev/sda5 TestVG
+if [ $(echo $USER) != "root" ]
+	then
+	echo "Script must be run with root access" 1>&2
+	echo "Usage" 1>&2
+	echo "\tsudo $0" 1>&2
+	exit 1
+elif [ $(echo $USER) = "root" ]
+	then
+	MSG="[ ok ] login successful, attempting to mount disks"
+	DISK1=/dev/mapper/testvg-1TB
+	MNT1=/mnt/1TB
+	IOMEGA=/dev/disk/by-uuid/E6B2-24A0 
+	MNT3=/mnt/iomega
+#	DISK2=/dev/mapper/testvg-2TB
+#	MNT2=/mnt/2TB
+#	[ -b $DISK2 ] && mount $DISK2 $MNT2
 
-# Generic Hard disk variables
-block1=/dev/sdc1
-block2=/dev/sdd1
-block3=/dev/mapper/testvg-1TB
+	[ ! -d $MNT3 ] && mkdir $MNT3
+	[ ! -d $MNT1 ] && mkdir $MNT1
 
-# Generic mount points in /mnt
-ext1=/mnt/ext1
-ext2=/mnt/ext2
-ext3=/mnt/ext3
-
-# First check if sd{c,d,e}1 is available for mount, then mount it
-[ -b ${block1} ] && [ -d ${ext1} ] && mount -t ntfs-3g ${block1} ${ext1}
-[ -b ${block2} ] && [ -d ${ext2} ] && mount ${block2} ${ext2}
-[ -b ${block3} ] && [ -d ${ext3} ] && mount ${block3} ${ext3}
-
-# another round of tests, this time recursively mod owner's group  
-# will only chgrp if two previous tests return without fail
-#[ -b ${block1} ] && [ -d ${ext1} ] && chgrp -R storage ${ext1}
-#[ -b ${block2} ] && [ -d ${ext2} ] && chgrp -R storage ${ext2}
-#[ -b ${block3} ] && [ -d ${ext3} ] && chgrp -R storage ${ext3}
-
-# Check if lynzh is in group 'storage', else add him to that group
-CHECK_STORAGE() 
-{ 
-	groups lynzh 2>&1 | grep -o storage 
-}
-# [ -n CHECK_STORAGE ] && exit 0 || [ -z CHECK_STORAGE ] && gpasswd -a lynzh storage && exit 0;
+	echo $MSG
+	[ -b $DISK1 ] && mount $DISK1 $MNT1
+	[ -b $IOMEGA ] && mount $IOMEGA $MNT3
+fi
